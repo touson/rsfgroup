@@ -1,0 +1,716 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mem",
+				"memberPost"
+			],
+			[
+				"get_post",
+				"get_post_meta"
+			],
+			[
+				"erro",
+				"errorHandler"
+			],
+			[
+				"char",
+				"characters"
+			],
+			[
+				"charac",
+				"characterSelector"
+			],
+			[
+				"block",
+				"blockName"
+			],
+			[
+				"late",
+				"latestEvent"
+			],
+			[
+				"sho",
+				"show-details-body"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"textal",
+				"text-align"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 149.0,
+		"last_filter": "synhtm",
+		"selected_items":
+		[
+			[
+				"synhtm",
+				"Set Syntax: HTML"
+			],
+			[
+				"syntaxhtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"gist",
+				"Gist: Insert Gist"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"snippee",
+				"Snippet: echopre"
+			],
+			[
+				"Snippet: echo",
+				"Snippet: echopre"
+			],
+			[
+				"xdebug",
+				"Xdebug: Restore Layout"
+			],
+			[
+				"xdebugstartl",
+				"Xdebug: Start Debugging (Launch Browser)"
+			],
+			[
+				"xdebugstop",
+				"Xdebug: Stop Debugging (Close Windows)"
+			],
+			[
+				"xdebugstr",
+				"Xdebug: Start Debugging"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"enabkle",
+				"Package Control: Enable Package"
+			],
+			[
+				"disapack",
+				"Package Control: Disable Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"syntasas",
+				"Set Syntax: Sass"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"syntajavas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/touson/Sites/rsfgroup.co.uk"
+	],
+	"file_history":
+	[
+		"/Users/touson/Sites/rsfgroup.co.uk/.gitignore",
+		"/Users/touson/.bashrc",
+		"/Users/touson/.bash_profile",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/template-parts/content.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/twentysixteen/template-parts/content-single.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/twentysixteen/template-parts/content.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/latest-news.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/single-cast_member.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/page-templates/home.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/functions.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/footer.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/header.php",
+		"/Users/touson/Sites/basop/basop.sublime-project",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/template-parts/content-page.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/style.scss",
+		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/productions/templates/cast_member_metabox.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/productions/post-types/cast_member.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/productions/productions.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/page.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/productions/post-types/production.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/single.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/template-parts/biography.php",
+		"/Users/touson/exit",
+		"/Users/touson/Sites/basop/config.rb",
+		"/Users/touson/.bach_pr",
+		"/Users/touson/Desktop/ee phones.txt",
+		"/Users/touson/Desktop/rclone-v1.33-freebsd-amd64/rclone.1",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/general/_productions.scss",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/core/_var.scss",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/page-templates/productions.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/general/_common.scss",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/general/_homepage.scss",
+		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/productions/templates/production_metabox.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/single-production.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/template-parts/content-single.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/layout/_header.scss",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/template-parts/content-none.php",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/layout/_footer.scss",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/js/core.js",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/general/_pages.scss",
+		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/productions/templates/cast_image_metabox.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/page-templates/production.php",
+		"/Users/touson/Downloads/custom-post-type-image-upload/custom-post-type-image-upload.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/general/_production.scss",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/style.css",
+		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/productions/templates/secondary_cast_metabox.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/productions/post-types/secondary_cast.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/template-parts/content-production.php",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/User/snippets/echopre.sublime-snippet",
+		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/index.php",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/User/snippets/echopre",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/User/Xdebug.sublime-settings",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/Xdebug Client/Xdebug.sublime-settings",
+		"/Users/touson/Sites/basop/htdocs/.htaccess",
+		"/Users/touson/Sites/basop/.gitignore",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/core/_common.scss",
+		"/Users/touson/Sites/basop/htdocs/wp-config.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/core/_typography.scss",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/core/_production.scss",
+		"/Users/touson/Downloads/template-list-metabox-by-010pixel/010pixel_tmplt_list_metabox.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/custom-post-type-ui/custom-post-type-ui.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/custom-post-type-ui/js/cptui.js",
+		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/custom-post-type-ui/readme.txt",
+		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/custom-post-type-ui/classes/class.cptui_debug_info.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/custom-post-type-ui/inc/post-types.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/akismet/akismet.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/theatre/readme.txt",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/core/_font.scss",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/touson/Desktop/robo advice notes.txt",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/twentysixteen/page.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/inc/template-tags.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/core/_grid.scss",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/mixin/_breakpoint.scss",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/core/_forms.scss",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/mixin/_button.scss",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/_typography.scss",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/_var.scss",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/comments.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/404.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/inc/customizer.php",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/archive.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/inc/back-compat.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/index.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/search.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/searchform.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/sidebar.php",
+		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/template-parts/content-search.php",
+		"/Users/touson/Sites/basop/htdocs/.gitignore",
+		"/Users/touson/Sites/basop/htdocs/composer.json",
+		"/Users/touson/Sites/basop/README.md",
+		"/Users/touson/Sites/basop/htdocs/config/app.php",
+		"/Users/touson/Sites/washroomadvertising.co.uk/washroom.sublime-project",
+		"/Users/touson/Sites/washroomadvertising.co.uk/htdocs/wp-config.php",
+		"/Users/touson/Sites/washroomadvertising.co.uk/config.rb",
+		"/Users/touson/Sites/washroomadvertising.co.uk/htdocs/wp-content/themes/twentyfourteen/scss/core/_common.scss",
+		"/Users/touson/Sites/washroomadvertising.co.uk/htdocs/wp-content/themes/washroom/scss/core/_common.scss",
+		"/Users/touson/Sites/washroomadvertising.co.uk/htdocs/compass.rb",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/controllers/Page.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss/layout/_footer.scss",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/includes/footer.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/config/form_validation.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/contact.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss/core/_common.scss",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/models/contact_model.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/config/autoload.php",
+		"/Users/touson/Sites/rsfbathrooms/rsf.sublime-project",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/config/config.php",
+		"/Users/touson/Sites/ww2.theunderfloorheatingstore.com/app/config/form_validation.php",
+		"/Users/touson/Sites/ww2.theunderfloorheatingstore.com/app/models/contact_model.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/installation.php",
+		"/Users/touson/Sites/lbgroupltd.com/htdocs/wp-content/themes/lbgroup/news-page.php",
+		"/Users/touson/Sites/lbgroupltd.com/lbgroup.sublime-project",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/home.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/js/core.js",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/products.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/js/jquery.parallax-1.1.3.js",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/errors/html/error_404.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/config/routes.php",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/AdvancedNewFile/Default (OSX).sublime-keymap",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/includes/scripts.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss/components/_magnific.scss",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss/components/_settings.scss",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss/style.scss",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss/components/_magnific-popup.scss",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/js/magnific_popup_1-1.js"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop",
+			"/Users/touson/Sites/basop/htdocs/wp-content/plugins/productions",
+			"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop",
+			"/Users/touson/Sites/basop/htdocs/wp-content/themes",
+			"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop",
+			"/Users/touson/Sites/washroomadvertising.co.uk/htdocs/wp-content/themes/washroom",
+			"/Users/touson/Sites/washroomadvertising.co.uk",
+			"/Users/touson/Sites/washroomadvertising.co.uk/htdocs/wp-content",
+			"<project>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"jquery",
+			"<li>(\\d*) ",
+			"\\n",
+			"􀁙􀁌􀁛􀁜􀁙􀁕􀀓􀀃􀁛􀁏􀁌􀁠􀀃􀁙􀁌􀁈􀁓􀁐􀁡􀁌􀀃􀁛􀁏􀁈􀁛􀀃􀁛􀁏􀁌􀁠􀀃􀁏􀁈􀁝􀁌􀀃􀁕􀁖􀀃􀁊􀁏􀁖􀁐􀁊􀁌􀀃􀁉􀁜􀁛􀀃􀁛􀁖􀀃􀃅􀁌􀁌􀀃",
+			"@newDomain",
+			"@oldDomain",
+			"<div class=\"form-group\">\n\t<label for=\"name\">Name</label>\n\t[text* name class:form-control id:name]\n</div>",
+			"page-header",
+			"$j",
+			"determined",
+			"\\n",
+			"Book",
+			"book",
+			"$production",
+			"'",
+			"$production",
+			"$character",
+			"$characters",
+			"$scharacters",
+			"$dropdown",
+			"$character",
+			"$characters",
+			"/wp-content/uploads/2016/04/12523962_10154061555743784_2081837006699415004_n.jpg",
+			"http://basop.local",
+			"184px",
+			"#hp-panels li .image-crop img",
+			"latestEvent",
+			"print_r",
+			"var_dump",
+			"print_r",
+			"'</p>'",
+			"Gemma Sewell<strong>Marlon Bran",
+			"<p><strong>",
+			"<span class=\"name\"></span>",
+			"<img src=\"#\" alt=\"\">",
+			"f-size-",
+			"$post",
+			"admin_init",
+			"<h1 class=\"entry-title\">",
+			"$castMember",
+			"bspProduction",
+			"Cast_Template",
+			"PostTypeTemplate",
+			"$PostTypeTemplate",
+			"PostTypeTemplate",
+			"ucwords(self::POST_TYPE)",
+			"strtolower(self::POST_TYPE)",
+			" . strtolower(self::POST_TYPE)",
+			"director",
+			"venue",
+			"meta_c",
+			"rsficon",
+			"navigation",
+			"<a href=\"#\"></a>",
+			"src=\"\"",
+			"get_header_image",
+			"_wpemojiSettings",
+			"$button-color",
+			"fw-",
+			"w",
+			"complement",
+			"secondary-2",
+			"secondary-1",
+			"primary",
+			"$color",
+			"\\)\\)",
+			"))",
+			" )",
+			"( ",
+			"ie.css",
+			"twentysixteen",
+			"Twenty Sixteen",
+			"Twenty_Sixteen",
+			".gallery",
+			"gallery",
+			"htdocs/",
+			"other-site-link",
+			"pp-copy-and-brands",
+			"|xss_clean",
+			"phone",
+			"name",
+			"helper",
+			"libr",
+			"form-con",
+			"form",
+			"enquiry",
+			"from",
+			"ins-intro",
+			"body",
+			"IMG;?>/products/",
+			"mfp-fade",
+			"&",
+			"rsficon",
+			";\n",
+			"rsficon",
+			"#product-design",
+			"#hp-big-tap",
+			"#hp-intro",
+			"hp",
+			"p-intro",
+			"position_intro_block",
+			"#main-container",
+			"main-contain",
+			"set_window_top()",
+			"set_window_top",
+			"$c-lgrey",
+			"$c-xlgrey",
+			"$c-lgrey",
+			"lgrey",
+			"body",
+			"trim",
+			"dgrey"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<li><span class=\"year\">$1</span> ",
+			" ",
+			"'touson.co.uk'",
+			"'basop.local'",
+			" ",
+			")\\n)",
+			"basop",
+			"Basop",
+			"IMG;?>/products/thumbs/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 209.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Compass/Compass.sublime-build",
+	"project": "rsfgroup.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"headscs",
+				"themes/basop/scss/layout/_header.scss"
+			],
+			[
+				"header",
+				"themes/basop/header.php"
+			],
+			[
+				"var",
+				"themes/basop/scss/core/_var.scss"
+			],
+			[
+				"footer",
+				"themes/basop/footer.php"
+			],
+			[
+				"common",
+				"themes/basop/scss/core/_common.scss"
+			],
+			[
+				"_foot",
+				"themes/basop/scss/layout/_footer.scss"
+			],
+			[
+				"style.sc",
+				"themes/basop/scss/style.scss"
+			],
+			[
+				"grid",
+				"themes/basop/scss/core/_grid.scss"
+			],
+			[
+				"_head",
+				"themes/basop/scss/layout/_header.scss"
+			],
+			[
+				"_butt",
+				"themes/basop/scss/mixin/_button.scss"
+			],
+			[
+				"test",
+				"htdocs/wp-content/themes/washroom/page-templates/testimonials.php"
+			],
+			[
+				"site-list",
+				"htdocs/wp-content/themes/washroom/page-templates/site-list.php"
+			],
+			[
+				"wp-confi",
+				"htdocs/wp-config.php"
+			],
+			[
+				"commonscs",
+				"htdocs/wp-content/themes/twentyfourteen/scss/core/_common.scss"
+			],
+			[
+				"contact",
+				"htdocs/app/views/contact.php"
+			],
+			[
+				"foot",
+				"htdocs/app/views/includes/footer.php"
+			],
+			[
+				"auto",
+				"htdocs/app/config/autoload.php"
+			],
+			[
+				"form",
+				"htdocs/app/config/form_validation.php"
+			],
+			[
+				"page",
+				"htdocs/app/controllers/Page.php"
+			],
+			[
+				"insta",
+				"htdocs/app/views/installation.php"
+			],
+			[
+				"typog",
+				"htdocs/resources/scss/core/_typography.scss"
+			],
+			[
+				"produc",
+				"htdocs/app/views/products.php"
+			],
+			[
+				"paral",
+				"htdocs/resources/js/jquery.parallax-1.1.3.js"
+			],
+			[
+				"core",
+				"htdocs/resources/js/core.js"
+			],
+			[
+				"rout",
+				"htdocs/app/config/routes.php"
+			],
+			[
+				"script",
+				"htdocs/app/views/includes/scripts.php"
+			],
+			[
+				"home",
+				"htdocs/app/views/home.php"
+			],
+			[
+				"commonsc",
+				"htdocs/resources/scss/core/_common.scss"
+			],
+			[
+				"footerscs",
+				"htdocs/resources/scss/layout/_footer.scss"
+			],
+			[
+				"head",
+				"htdocs/app/views/includes/header.php"
+			],
+			[
+				"comm",
+				"htdocs/resources/scss/core/_common.scss"
+			],
+			[
+				"stylesc",
+				"resources/scss/style.scss"
+			],
+			[
+				"style",
+				"resources/css/style.css"
+			],
+			[
+				"reset",
+				"resources/scss/core/_reset.scss"
+			],
+			[
+				"hom",
+				"app/views/home.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"lbrec",
+				"~/Sites/lbrecruit.local/lbrecruit.sublime-project"
+			],
+			[
+				"lbre",
+				"~/Sites/lbrecruit.local/lbrecruit.sublime-project"
+			],
+			[
+				"rsf",
+				"~/Sites/rsfbathrooms/rsf.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 257.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
