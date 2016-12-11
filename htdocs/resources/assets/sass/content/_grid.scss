@@ -1,0 +1,65 @@
+/* ============================================ *
+ * Grid styles
+ * ============================================ */
+
+.col-set {
+	font-size: 0;
+	& > * {
+		outline: 1px solid #000;
+		height:50px;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 2%;
+		margin-bottom: $gap;
+		width: 100%;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+@include bp(min-width, $bp-xsmall + 1) {
+	.col-set {
+		.col-4 {
+			width: 49%;
+			&:nth-of-type(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@include bp(min-width, $bp-small + 1) {
+	.col-set {
+		.col-2 {
+			width: 49%;
+		}
+		.col-3 {
+			width: 32%
+		}
+		.col-4 {
+			width: 23.5%;
+			&:nth-of-type(2n) {
+				margin-right: 2%;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		.col-5 {
+			width: 18.4%;
+		}
+	}
+}
+
+@include bp(min-width, $bp-medium + 1) {
+
+}
+
+@include bp(min-width, $bp-large + 1) {
+
+}
+
+@include bp(min-width, $bp-xlarge + 1) {
+
+}

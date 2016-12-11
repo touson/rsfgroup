@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+
+/* -------------------------------------------- *
+ * Required Star
+ */
+@mixin required-star {
+    &:after {
+        content:'*';
+        padding-left: 5px;
+    }
+}
+.required-star {
+    @include required-star;
+}
+
+/* -------------------------------------------- *
+ * Container
+ */
+@mixin main-container {
+    clear: both;
+    position: relative;
+    width: 100%;
+    &:after {
+        @include clearfix;
+    }
+}
+
+.show-above-bpsml,
+.show-above-bpmed,
+.show-above-bplrg,
+.show-above-bpxlrg,
+.hide-below-bpsml,
+.hide-below-bpmed,
+.hide-below-bplrg,
+.hide-below-bpxlrg {
+    display: none;
+}
+@include bp(min-width, $bp-small + 1) {
+    .hide-above-bpsml {
+        display: none;
+    }
+    .show-above-bpsml,
+    .hide-below-bpsml {
+        display: block;
+    }
+}
+@include bp(min-width, $bp-medium + 2) {
+    .hide-above-bpmed {
+        display: none;
+    }
+    .show-above-bpmed,
+    .hide-below-bpmed {
+        display: block;
+    }
+}
+@include bp(min-width, $bp-large + 1) {
+    .hide-above-bplrg,
+     {
+        display: none;
+    }
+    .show-above-bplrg,
+    .hide-below-bplrg {
+        display: block;
+    }
+}
+@include bp(min-width, $bp-xlarge + 1) {
+    .hide-above-bpxlrg {
+        display: none;
+    }
+    .show-above-bpxlrg,
+    .hide-below-bpxlrg {
+        display: block;
+    }
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+
+// =============================================
+// Mixin - Not Selectable
+// =============================================
+
+@mixin not-selectable {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin abs-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+}

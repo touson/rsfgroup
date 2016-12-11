@@ -1,0 +1,218 @@
+// =============================================
+// Compass Defaults
+// =============================================
+
+// Border Radius
+$default-border-radius: 5px;
+
+// Transition
+$default-transition-property: all;
+$default-transition-duration: 200ms;
+$default-transition-function: linear;
+$default-transition-delay: 0;
+
+// =============================================
+// Primary Break Points
+// =============================================
+
+// These should be used with the bp (max-width, xx) mixin
+// where a min-width is used, remember to +1 to break correctly.
+// If these are changed, they must also be updated in app.js
+
+$bp-xsmall: 479px;
+$bp-small: 599px;
+$bp-medium: 767px;
+$bp-large: 959px;
+$bp-xlarge: 1199px;
+
+
+// =============================================
+// Optimisation
+// =============================================
+// We use this to control whether or not CSS classes come through in the gem files.
+/* If you're using SASS with sematic coding, setting this to false will eliminate the styles for unused components from compiling into your final css file, making it much smaller. Only the styles you use will be used. $include-html-classes: true; give you control of the styling applied to the presentation classes. Changing this to false will disable those baked in styles. */
+$include-html-classes: false !default;
+$include-print-styles: false !default;
+$include-html-global-classes: $include-html-classes !default;
+
+
+// =============================================
+// Base Values
+// =============================================
+
+// Spacing
+$gap: 20px;
+$trim: 30px;
+
+$box-spacing: $gap;
+
+// Dimensions
+$max-content-width: 1200px;
+
+$padding: 12px !default; // Consistent padding and margins
+$margin: 12px !default; // Margin below
+$global-radius: 5px !default; // Border-radius
+$box-radius: 5px !default; // Box-radius
+$btn-radius: 5px !default; // Button border-radius
+
+// =============================================
+// Brand Colors
+// =============================================
+
+// Usually not used directly in Sass partials.
+// Only used to define context-based color vars in this file.
+
+$c-blue:   #0075BE;
+$c-lblue:  #bbd6e8;
+$c-dblue:  #003a5f;
+$c-green:  #78B834;
+$c-orange: #EC6607;
+$c-red:    #E60004;
+$c-black:  #000000;
+$c-white:  #ffffff;
+$c-xlgrey:  #F4F4F4;
+$c-lgrey:  #ebebeb;
+$c-grey:   #A7A9AB;
+$c-dgrey:  #58585B;
+$c-charcoal: #878787;
+
+$c-border: #d7d7d7;
+
+$c-success-text: #468d01;
+$c-success-bg: #f4f6f2;
+
+$c-facebook: #008BD0;
+$c-twitter: #26BBED;
+$c-google-plus: #DF001F;
+$c-linkedin: #0B4F9D;
+$c-youtube: #DF001F;
+
+// =============================================
+// Base Colors
+// =============================================
+
+// Text
+$c-text: $c-dgrey;
+$c-text-gray: $c-grey; // Sidebar List link | Sidebar Text
+
+// Primary font color for headings and other non-link text
+$c-primary: $c-blue;
+
+// Interaction
+$c-action: $c-dgrey;
+$c-stimulus: darken($c-blue, 15%);
+$c-subtle: #A0A0A0;
+
+
+// Notifications
+$c-danger: $c-red;
+$c-danger-background: #ffe0d8;
+
+$c-success: $c-green;
+$c-success-background: #EFF5EA;
+
+$c-warn: #ff6129;
+$c-warn-background: #ffd1c0;
+
+$c-dark: #676157;
+
+// Global Elements
+$c-divider-border: #ECECEC;
+
+// =============================================
+// Element Colors
+// =============================================
+
+// Buttons
+$c-button: #5c5c5c;
+$c-button-hover: #2b292a;
+$c-button-active: #2b292a;
+
+// Secondary Buttons
+$c-button-secondary: #DDDDDD;
+$c-button-secondary-hover: darken(#DDDDDD, 5%);
+$c-button-secondary-active: darken(#DDDDDD, 10%);
+
+$c-button-subtle: #ECECEC;
+
+// Block borders
+$c-border: $c-grey;;
+$c-border-dark: darken($c-grey, 20%);
+
+// Forms
+$c-input-border: $c-border;
+$c-input-border-focus: $c-red;
+
+$c-input-placeholder: $c-dgrey;
+$c-input-text: $c-text;
+
+$c-fieldset-border: $c-border;
+$c-fieldset-border-light: $c-border;
+
+// Headings
+$c-h1: $c-dgrey;
+$c-h2: $c-dgrey;
+$c-h3: $c-blue;
+$c-h4: $c-dgrey;
+$c-h5: $c-dgrey;
+$c-h6: $c-dgrey;
+
+// Link
+$c-link: $c-action;
+$c-link-hover: $c-blue;
+$c-link-focus: $c-action;
+$c-link-active: $c-blue;
+
+
+// Table
+$c-table-background: $c-xlgrey;
+$c-table-border: #C0C0C0;
+
+$c-table-zebra-odd: #F8F7F5;
+$c-table-zebra-even: #EEEDED;
+
+// Tabs
+$c-tabs-background: #F0F0F0;
+
+
+// =============================================
+// Typography
+// =============================================
+
+// Since the typical default browser font-size is 16px, that makes the calculation for grid size.
+// If you want your base font-size to be different and not have it affect the grid breakpoints,
+// set $rem-base to $base-font-size and make sure $base-font-size is a px value.
+$base-font-size: 16px;
+$base-line-height: 1;
+$base-letter-spacing: 0;
+
+$rem-base: $base-font-size;
+
+$font-smoothing: antialiased !default; // We use this to control font-smoothing
+
+$f-arial: Arial, Helvetica, sans-serif !default;
+$f-sans: Open Sans, Verdana, Geneva, sans-serif !default;
+$f-serif: Palatino Linotype, Book Antiqua, Palatino, serif !default;
+$f-monospace: Andale Mono, Courier New, Courier, monospace !default;
+$f-roboto: 'Roboto', arial, sans-serif !default;
+$f-icon: ufhs;
+
+$f-stack-default: $f-arial;
+$f-stack-special: $f-roboto;
+$f-stack-sans: $f-sans;
+$f-stack-serif: $f-serif;
+
+// Font Sizes
+$f-size-xxl: 18px;
+$f-size-xl: 16px;
+$f-size-l: 15px;
+
+$f-size: 14px;
+
+$f-size-s: 13px;
+$f-size-xs: 12px;
+$f-size-xxs: 11px;
+$f-size-xxxs: 10px;
+
+// Base Measures
+$line-height: 140%;

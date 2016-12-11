@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+/* ============================================ *
+ * FORMS - COMMON
+ * ============================================ */
+
+
+/* -------------------------------------------- *
+ * Labels
+ */
+
+label {
+    display: inline-block;
+    font-size: $f-size;
+    font-weight: 300;
+    @include not-selectable;
+}
+
+label.required:after,
+span.required:after {
+    content: ' *';
+    color: $c-danger;
+    font-weight: normal;
+    font-family: $f-stack-sans;
+    font-size: $f-size-xs;
+}
+
+label.required em,
+span.required em {
+    display: none;
+}
+
+/* -------------------------------------------- *
+ * Textarea
+ */
+
+textarea {
+    @include box-sizing(border-box);
+    width: 100%;
+    max-width: 450px;
+    padding: 5px;
+}
+
+/* -------------------------------------------- *
+ * Inputs
+ */
+
+.input-text {
+    border: 1px solid darken($c-lgrey, 10%);
+    background: $c-white;
+    font-size: $f-size-xs;
+    font-weight: 300;
+    &.validation-failed {
+	    border-color: $c-danger;
+	    &:focus {
+		    outline-color: tint($c-danger, 50%);
+		}
+	}
+}
+
+input[type=email],
+input[type=search],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text] {
+    height: 30px;
+    padding: 0 8px;
+    width: 100%;
+    max-width: 100%;
+    @include border-radius(5px);
+}
+
+@include bp(min-width, $bp-xsmall + 1) {
+    input[type=email],
+    input[type=search],
+    input[type=number],
+    input[type=password],
+    input[type=tel],
+    input[type=text] {
+        width: (365px);
+    }
+}
+
+/* Only show on iPhones (not iPads or any other device) */
+@media only screen and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 0) {
+    input[type=email],
+    input[type=search],
+    input[type=number],
+    input[type=password],
+    input[type=tel],
+    input[type=text],
+    select {
+        font-size: 16px; /* Prevent from zooming on focus */
+    }
+}
+
+/* -------------------------------------------- *
+ * Inputs - Quantity
+ */
+
+input[type=number].qty,
+input[type=text].qty {
+    width: 3em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* -------------------------------------------- *
+ * Placeholder
+ */
+
+::-webkit-input-placeholder {
+    color: $c-input-placeholder;
+}
+
+input:-moz-placeholder {
+    color: $c-input-placeholder;
+}
+
+/* -------------------------------------------- *
+ * Checkbox And Radio
+ */
+
+.checkbox,
+.radio {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+}
+
+.checkbox + label,
+.radio + label {
+    width: auto;
+    max-width: 85%;
+    padding: 0 0 0 8px;
+    font-size: $f-size;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+/* -------------------------------------------- *
+ * Select
+ */
+select {
+    height: 33px;
+    width: 100%;
+    max-width: 365px;
+    -webkit-appearance: none;  /*Removes default chrome and safari style*/
+    appearance: none; /* Removes Default IE11 style*/
+    text-indent: 0.01px; /* Removes default arrow from firefox*/
+    text-overflow: '';  /*Removes default arrow from firefox*/
+    background:
+        $c-white
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAICAYAAADjoT9jAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTQ2MDQzNEY0RDY1MTFFNDhDNkJFRkIwM0IwOTgyMzIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTQ2MDQzNTA0RDY1MTFFNDhDNkJFRkIwM0IwOTgyMzIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFNDYwNDM0RDRENjUxMUU0OEM2QkVGQjAzQjA5ODIzMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFNDYwNDM0RTRENjUxMUU0OEM2QkVGQjAzQjA5ODIzMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuBlxIgAAADsSURBVHjanFJJioRAEMwGBbHBq1dxw6P4Ek/iCv7aj7jiEjNRTA30rTUhyawsiIhc5P1+oygKzPMsAOS6LhX3fVdxWZb/elVVEOET8q1LGIYwDANN02BdVznPU30wZzyOQ9W6roNlWfB9/x7BOI4SBAFM00TbtqByAhJYd9X3PWzbRhzH0AK+JtBJkiRKYVmWILiu13WtOvQ8D9u23QL/IKBToeM4yPNcjYFjo3KC3wXW/lIsf8aFRlEELpQ5O3FdV4ZheP2OUB6ZZtLXQ8+yTF1LmqaYpkmeqv8YkT5HLpE5d6L/9LKf+I8AAwCDJtg7cB6eSwAAAABJRU5ErkJggg==) no-repeat 100% 50%;
+    background-position-x: 100%;
+    background-position-y: center;
+    border: 1px solid $c-grey;
+    padding: 5px 30px 5px 14px;
+    -moz-appearance: none;
+    @include border-radius(8px);
+    &:hover {
+        background:
+            $c-white
+            url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAICAYAAADjoT9jAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTQ2MDQzNEI0RDY1MTFFNDhDNkJFRkIwM0IwOTgyMzIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTQ2MDQzNEM0RDY1MTFFNDhDNkJFRkIwM0IwOTgyMzIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFNDYwNDM0OTRENjUxMUU0OEM2QkVGQjAzQjA5ODIzMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFNDYwNDM0QTRENjUxMUU0OEM2QkVGQjAzQjA5ODIzMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PhF6clQAAABWSURBVHjapJBJDgAgCANb//9nXBINGhWRHjgQmBYIQFCLCGGI5PNsV1qXLbhXSac5QXTfk35ccDOJwKcX7Uyi8MYoi+avf+HTBSdYBL410NAovCoLMAB6WDUF5ZDNaQAAAABJRU5ErkJggg==) no-repeat 100% 50%;
+        background-position-x: 100%;
+        background-position-y: center;
+        border-color: scale-color($c-input-border, $lightness: -3%);
+    }
+    &::-ms-expand { /* Removes Default IE10 style*/
+	    display: none;
+	}
+	&:disabled {
+	    @include opacity(0.8);
+	}
+	& + select {
+	    margin-left: 5px;
+	}
+	&[multiple] {
+	    width: 270px;
+	    border: 1px solid $c-input-border;
+	    font-size: $f-size-l;
+	    padding: 5px;
+	}
+}

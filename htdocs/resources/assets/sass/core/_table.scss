@@ -1,0 +1,99 @@
+//---------------------
+// General table styles
+//---------------------
+
+.table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    td,
+    th {
+        padding: 8px 13px;
+        text-align: left;
+        border-left: 1px solid $c-border;
+        font-size: 14px;
+    }
+    th {
+        color: $c-border-dark;
+        border-bottom: 2px solid $c-border-dark;
+    }
+    td {
+        border-top: 1px solid $c-border;
+    }
+    tr {
+    	th:first-of-type,
+        td:first-of-type {
+	        border-left: none;
+	    }
+	}
+    .blank {
+        border: none;
+    }
+    thead {
+    	th {
+	        font-weight: bold;
+	        border-left: 1px solid $c-border!important;
+	        border-right: 1px solid $c-border;
+	        :first-of-type {
+		        border-left: none!important;
+		    }
+		    :last-of-type {
+		        border-right: none;
+		    }
+		    [colspan="2"],
+		    [colspan="3"],
+		    [colspan="4"],
+		    [colspan="5"] {
+		        text-align: center;
+		    }
+		}
+	}
+}
+
+//--------------------------
+//  Table with Side headings
+//--------------------------
+table.side {
+    @extend .table;
+    th {
+	    text-align: right;
+	    border-right: 2px solid $c-border-dark;
+	    border-left: none;
+	    border-top: 1px solid $c-border;
+	    border-bottom: none;
+	    vertical-align: middle;
+	}
+	& tr:first-of-type th,
+	& tr:first-of-type td {
+	    border-top: none;
+	}
+}
+
+//----------------------------------
+//  Table with Top and Side headings
+//----------------------------------
+table.top-and-side {
+    @extend .table;
+    thead {
+    	th {
+		    border-left: 1px solid $c-border;
+		    border-right: none;
+		    border-top: none;
+		    border-bottom: 2px solid $c-border-dark;
+		    :first-of-type {
+			    border-right: 2px solid $c-border-dark;
+			    border-left: none!important;
+			}
+		}
+	}
+	tbody {
+		th {
+		    border-right: 2px solid $c-border-dark;
+		    border-bottom: 1px solid $c-border;
+		}
+		tr:last-of-type {
+			th {
+			    border-bottom: 0px solid #fff;
+			}
+		}
+	}
+}

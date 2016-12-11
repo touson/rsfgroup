@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* ============================================ *
+ * Base Styles
+ * ============================================ */
+
+hr {
+    border: 0;
+    background-color: $c-grey;
+    height: 1px;
+    margin: 0 0 $box-spacing;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.4;
+}
+
+// Get rid of gap under images by making them display: inline-block; by default
+img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width:100%;
+    height: auto;
+	-ms-interpolation-mode: bicubic;
+}
+
+// Make sure textarea takes on height automatically
+textarea {
+    height: auto;
+    min-height: 100px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* Vertical Centering
+---------------------------------------------- */
+.vwrapper {
+	display:table;
+	height: 100%;
+	width: 100%;
+}
+.vcell {
+	display:table-cell;
+	vertical-align:middle;
+}
+
