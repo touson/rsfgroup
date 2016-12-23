@@ -15,5 +15,8 @@ require('laravel-elixir-vue-2');
 
 elixir((mix) => {
     mix.sass('styles.scss')
-       .scripts('app.js');
+       .scripts([
+       		'app.js',
+       		'jquery.bxslider.js'
+       	]);
 });

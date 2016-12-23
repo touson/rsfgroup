@@ -10,6 +10,72 @@ button {
     padding: 4px 12px;
 }
 
+@mixin button-with-icon($style, $icon) {
+	@if $style == bright {
+		background: $c-blue;
+		color: $c-white;
+    }
+	@else {
+		background: $c-bblue;
+		color: $c-white;
+	}
+	font-size: 18px;
+	line-height: 50px;
+	height: 50px;
+	padding-left: 30px;
+	display: inline-block;
+	vertical-align: top;
+	&:hover {
+		@if $style == bright {
+			background: darken($c-blue, 10%);
+	    }
+		@else {
+			background: darken($c-bblue, 10%);
+		}
+		&:after {
+			@if $style == bright {
+				background: darken($c-bblue, 10%);
+		    }
+			@else if $style == light {
+				background: darken($c-lgrey, 10%);
+			}
+			@else {
+				background: darken($c-blue, 10%);
+			}
+		}
+	}
+	&:after {
+		content: $icon;
+		font-family: "ufhs" !important;
+	    font-style: normal !important;
+	    font-weight: normal !important;
+	    font-variant: normal !important;
+	    text-transform: none !important;
+	    speak: none;
+	    display: inline-block;
+	    vertical-align: top;
+	    line-height: 56px;
+	    height: 50px;
+	    width: 50px;
+	    font-size: 33px;
+	    margin-left: 30px;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	    @if $style == bright {
+			background: $c-bblue;
+			color: $c-blue;
+	    }
+		@else if $style == light {
+			background: $c-lgrey;
+			color: $c-blue;
+		}
+		@else {
+			background: $c-blue;
+			color: $c-lgrey;
+		}
+	}
+}
+
 @mixin button($button-color, $text-color) {
     background-color: $button-color;
     display: inline-block;
@@ -56,13 +122,6 @@ button {
     }
 }
 
-.button.search-button {
-    //padding: 6px 16px 6px;
-    &:after{
-        display:none;
-    }
-}
-
 /* Primary Buttons */
 .button {
     border-radius: 4px;
@@ -101,78 +160,4 @@ button {
         background-color:$c-black;
         color:$c-white;
     }
-}
-.unbutton {
-    background: transparent;
-    color: $c-link;
-    border: none;
-    .no-touch &:hover {
-        background-color: transparent;
-    }
-}
-
-
-/* Secondary Buttons */
-.button.button-secondary {
-    background: $c-button-secondary;
-    color: $c-text;
-    border-color: #B8B8B8;
-
-    .no-touch &:hover {
-        background: $c-button-secondary-hover;
-        cursor: pointer;
-    }
-
-    &:active {
-        background: $c-button-secondary-active;
-        color: $c-text;
-    }
-
-    &:focus {
-        color: $c-text;
-        background: $c-button-secondary-active;
-        outline: none;
-    }
-}
-
-.button.button-secondary {
-    &.arrow {
-        padding: 6px 36px 4px 16px;
-    }
-    &.arrow.back {
-        padding: 6px 16px 4px 36px;
-    }
-}
-
-/* Disabled - class for anchor, state for form elements */
-.button.disabled,
-.button:disabled {
-    background: #C8C8C8;
-    border-color: shade(#C8C8C8, 20%);
-    opacity: 0.6;
-    cursor: not-allowed;
-}
-
-/* Adjacent buttons */
-.button + .button {
-    margin-left: 5px;
-}
-
-/* Buttons & anchor links */
-.col-left,
-.col-right {
-    // Align the vertical height of the anchor to line up with the button
-    .block .actions .button ~ a {
-        line-height: 33px;
-        margin-right: 5px;
-    }
-}
-
-/* ============================================ *
- * CMS block buttons
- * ============================================ */
-
-.m-button {
-    @include font-icon('n');
-    @include font-icon-after('E');
 }

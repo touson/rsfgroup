@@ -44,12 +44,24 @@
     margin-bottom: 20px;
     margin-top: 6px;
     color: $c-h2;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     font-style: normal;
     line-height: 1.2;
     text-rendering: optimizeLegibility;
-    text-transform: uppercase;
+    border-bottom: 2px solid $c-lgrey;
+    padding-bottom: 9px;
+    position: relative;
+    &:after {
+    	position: absolute;
+    	content: " ";
+    	z-index: 0;
+    	left: 0;
+    	bottom: -2px;
+    	width: 80px;
+    	border: 1px solid $c-bblue;
+    	height: 1px;
+    }
 }
 
 @mixin h3 {
@@ -60,8 +72,21 @@
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
-    line-height: 1.4;
+    line-height: 1.2;
     text-rendering: optimizeSpeed;
+    border-bottom: 2px solid $c-lgrey;
+    padding-bottom: 9px;
+    position: relative;
+    &:after {
+    	position: absolute;
+    	content: " ";
+    	z-index: 0;
+    	left: 0;
+    	bottom: -2px;
+    	width: 80px;
+    	border: 1px solid $c-bblue;
+    	height: 1px;
+    }
 }
 
 @mixin h4 {

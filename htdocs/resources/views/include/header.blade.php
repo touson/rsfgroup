@@ -1,5 +1,5 @@
 <header>
-	<div class="header-container">
+	<div class="container">
 		<div class="logo">
 			<img src="images/general/logo.png" alt="RSF Group" />
 		</div>
@@ -12,5 +12,6 @@
 			</div>
 		</div>
 	</div>
-	@include('include.nav')
 </header>
+
+@include('include.nav')

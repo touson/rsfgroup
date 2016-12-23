@@ -10,24 +10,6 @@
  * Base Styles
  * ============================================ */
 
- @-ms-viewport {
- 	width: device-width;
- }
-
- @-o-viewport {
- 	width: device-width;
- }
-
- @viewport {
- 	width: device-width;
- }
-
-// Prevent 300ms delay in IE on touch devices
-a, button {
-	-ms-touch-action: manipulation;
-	touch-action: manipulation;
-}
-
 body,
 button,
 input,
@@ -74,6 +56,35 @@ ul {
 				color: $c-primary;
 			}
 		}
+	}
+}
+
+ul.arrow {
+	li {
+		&:before {
+			content: ' ';
+			width: 0;
+			height: 0;
+			border-left: 8px solid $c-white;
+			border-top: 5px solid transparent;
+			border-bottom: 5px solid transparent;
+			border-right: none;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 6px;
+		}
+	}
+	&.orange li:before {
+		border-left-color: $c-orange;
+	}
+	&.yellow li:before {
+		border-left-color: $c-yellow;
+	}
+	&.blue li:before {
+		border-left-color: $c-blue;
+	}
+	&.bblue li:before {
+		border-left-color: $c-bblue;
 	}
 }
 
@@ -183,6 +194,10 @@ ul {
 
  .b-dgrey {
  	background: $c-dgrey;
+ }
+
+ .b-lgrey {
+ 	background: $c-lgrey;
  }
 
  .b-red {

@@ -1,0 +1,102 @@
+footer {
+	background: $c-dgrey;
+	color: $c-lgrey;
+	a,
+	h4 {
+		color: $c-lgrey;
+	}
+	h4 {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+	ul.arrow {
+		li {
+			font-size: 14px;
+			padding: 0 0 4px 0;
+		}
+	}
+}
+
+.footer-container {
+	@extend .container;
+	padding: 50px;
+}
+
+.footer-block {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 7%;
+}
+
+.contact-block {
+	float: right;
+	text-align: right;
+	address {
+		font-size: 14px;
+		text-align: right;
+		margin-bottom: 30px;
+	}
+	.contact-details {
+		li {
+			font-size: 18px;
+			font-weight: 300;
+			padding: 0 0 6px 0;
+			strong {
+				color: $c-bblue;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+.footer-bottom {
+	clear: both;
+    margin-top: 40px;
+}
+
+.sign-up {
+	display: inline-block;
+	vertical-align: bottom;
+	width: 40%;
+	margin-right: 9%;
+	p {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	form {
+		font-size: 0;
+	}
+	input[type="text"] {
+		border: none;
+		@include border-radius(0);
+		font-size: 14px;
+
+	}
+	button {
+		background: $c-blue;
+		color: $c-white;
+		text-transform: uppercase;
+		line-height: 23px;
+	}
+}
+
+.copyright {
+	display: inline-block;
+	vertical-align: bottom;
+	width: 50%;
+	text-align: right;
+	p {
+		font-size: 12px;
+		line-height: 1.3;
+		color: $c-grey;
+	}
+}
+
+.client-logos {
+	background: $c-lblue;
+	padding: 20px 0;
+}
+
+.client {
+	display: none;
+}

@@ -15,8 +15,8 @@
 // Mixins
 
 @import "mixin/breakpoint";
-@import "mixin/clearfix";
 @import "mixin/triangle";
+@import "mixin/star";
 @import "mixin/typography";
 @import "mixin/helpers";
 
@@ -46,3 +46,5 @@
 // ----------------------------------------------
 // Content
 
+@import "content/testimonials";
+@import "content/home";

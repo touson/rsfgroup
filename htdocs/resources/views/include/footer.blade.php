@@ -1,14 +1,37 @@
 <footer>
-
 	<div class="client-logos">
-		<ul>
-			<li><img src="images/client-logos/xxx.png" alt="Redevco"></li>
-			<li><img src="images/client-logos/xxx.png" alt="Schuh"></li>
-			<li><img src="images/client-logos/xxx.png" alt="Urban Outfitters"></li>
-			<li><img src="images/client-logos/xxx.png" alt="Essex and Suffolk Water"></li>
-			<li><img src="images/client-logos/xxx.png" alt="CLC"></li>
-			<li><img src="images/client-logos/xxx.png" alt="Norwich Union"></li>
-		</ul>
+		<div class="container">
+			<div class="client">
+				<div class="cell">
+					<img src="images/client-logos/redevco.jpg" alt="Redevco">
+				</div>
+			</div>
+			<div class="client">
+				<div class="cell">
+					<img src="images/client-logos/schuh.jpg" alt="Schuh">
+				</div>
+			</div>
+			<div class="client">
+				<div class="cell">
+					<img src="images/client-logos/urban-outfitters.jpg" alt="Urban Outfitters">
+				</div>
+			</div>
+			<div class="client">
+				<div class="cell">
+					<img src="images/client-logos/essex-and-suffolk-water.jpg" alt="Essex and Suffolk Water">
+				</div>
+			</div>
+			<div class="client">
+				<div class="cell">
+					<img src="images/client-logos/clc.jpg" alt="CLC">
+				</div>
+			</div>
+			<div class="client">
+				<div class="cell">
+					<img src="images/client-logos/norwich-union.jpg" alt="Norwich Union">
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="footer-container">
 		<div class="footer-block">
@@ -36,7 +59,7 @@
 		</div>
 		<div class="footer-block">
 			<h4>Company</h4>
-			<ul class="arrow blue">
+			<ul class="arrow bblue">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About us</a></li>
 				<li><a href="#">Contact Us</a></li>
@@ -57,12 +80,12 @@
 				<li><strong>E</strong>info@rsfgroup.co.uk</li>
 			</ul>
 		</div>
-		<div class="footer-container">
+		<div class="footer-bottom">
 			<div class="sign-up">
 				<p>Sign up for our newsletter</p>
 				<form action="" method="post">
-				<input type="text">
-				<button>Submit</button>
+					<input type="text">
+					<button>Submit</button>
 				</form>
 			</div>
 			<div class="copyright">

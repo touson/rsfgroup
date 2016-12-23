@@ -62,15 +62,16 @@ $btn-radius: 5px !default; // Button border-radius
 // Usually not used directly in Sass partials.
 // Only used to define context-based color vars in this file.
 
-$c-blue:   #0075BE;
-$c-lblue:  #bbd6e8;
-$c-dblue:  #003a5f;
+$c-blue:   #0E5A94;
+$c-bblue:  #53b2E0;
+$c-lblue:  #E5F2F8;
 $c-green:  #78B834;
-$c-orange: #EC6607;
+$c-orange: #FF6400;
+$c-yellow: #FFCC00;
 $c-red:    #E60004;
 $c-black:  #000000;
 $c-white:  #ffffff;
-$c-xlgrey:  #F4F4F4;
+$c-xlgrey:  #F1F1F0;
 $c-lgrey:  #ebebeb;
 $c-grey:   #A7A9AB;
 $c-dgrey:  #58585B;
@@ -152,7 +153,7 @@ $c-fieldset-border-light: $c-border;
 // Headings
 $c-h1: $c-dgrey;
 $c-h2: $c-dgrey;
-$c-h3: $c-blue;
+$c-h3: $c-dgrey;
 $c-h4: $c-dgrey;
 $c-h5: $c-dgrey;
 $c-h6: $c-dgrey;
