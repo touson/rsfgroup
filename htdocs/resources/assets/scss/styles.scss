@@ -5,6 +5,7 @@
  * @author    Mat Havelock mat.havelock@redboxdigital.com
  */
 
+@import "compass/css3/transition";
 
 // ----------------------------------------------
 // Set up
@@ -16,7 +17,6 @@
 
 @import "mixin/breakpoint";
 @import "mixin/triangle";
-@import "mixin/star";
 @import "mixin/typography";
 @import "mixin/helpers";
 

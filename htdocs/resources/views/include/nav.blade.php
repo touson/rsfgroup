@@ -5,34 +5,34 @@
 			<li>
 				<a href="#" class="parent">Plumbing</a>
 				<ul>
-					<li>1</li>
-					<li>2</li>
-					<li>3</li>
-					<li>4</li>
-					<li>5</li>
-					<li>6</li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
 				</ul>
 			</li>
 			<li>
 				<a href="#" class="parent">Heating</a>
 				<ul>
-					<li>1</li>
-					<li>2</li>
-					<li>3</li>
-					<li>4</li>
-					<li>5</li>
-					<li>6</li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
 				</ul>
 			</li>
 			<li>
 				<a href="#" class="parent">Boilers</a>
 				<ul>
-					<li>1</li>
-					<li>2</li>
-					<li>3</li>
-					<li>4</li>
-					<li>5</li>
-					<li>6</li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
 				</ul>
 			</li>
 			<li><a href="#">Bathrooms</a></li>
@@ -41,5 +41,6 @@
 			<li><a href="#">Contact Us</a></li>
 			<li><a href="#">Commercial</a></li>
 		</ul>
+		<a data-icon="o" id="ellipse"></a>
 	</div>
 </nav>

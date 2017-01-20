@@ -13,6 +13,8 @@ require('laravel-elixir-vue-2');
  |
  */
 
+elixir.config.sourcemaps = false;
+
 elixir((mix) => {
     mix.sass('styles.scss')
        .scripts([

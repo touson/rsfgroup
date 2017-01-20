@@ -59,6 +59,7 @@ button {
 	    width: 50px;
 	    font-size: 33px;
 	    margin-left: 30px;
+	    text-align: center;
 	    -webkit-font-smoothing: antialiased;
 	    -moz-osx-font-smoothing: grayscale;
 	    @if $style == bright {

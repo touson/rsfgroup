@@ -1,0 +1,154 @@
+footer {
+	background: $c-dgrey;
+	color: $c-lgrey;
+	a,
+	h4 {
+		color: $c-lgrey;
+	}
+	h4 {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	ul.arrow {
+		li {
+			font-size: 14px;
+			padding: 0 0 4px 0;
+		}
+	}
+}
+
+.footer-container {
+	@extend .container;
+	padding: 50px 20px;
+}
+
+.footer-block {
+	display: block;
+	margin-bottom: 30px;
+}
+
+.contact-block {
+	address {
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
+	.contact-details {
+		li {
+			font-size: 18px;
+			font-weight: 300;
+			padding: 0 0 6px 0;
+			strong {
+				color: $c-bblue;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+.footer-bottom {
+	clear: both;
+    margin-top: 40px;
+}
+
+.sign-up {
+	margin-bottom: 20px;
+	p {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	form {
+		font-size: 0;
+	}
+	input[type="text"] {
+		border: none;
+		@include border-radius(0);
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	button {
+		background: $c-blue;
+		color: $c-white;
+		text-transform: uppercase;
+		line-height: 23px;
+	}
+}
+
+.copyright {
+	text-align: center;
+	p {
+		font-size: 12px;
+		line-height: 1.3;
+		color: $c-grey;
+		margin-bottom: 10px;
+	}
+}
+
+.client-logos {
+	background: $c-lblue;
+	padding: 20px 0;
+}
+
+.client {
+	display: none;
+}
+
+@include bp(min-width, $bp-xsmall + 1) {
+
+}
+
+@include bp(min-width, $bp-small + 1) {
+	.footer-block {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 3%;
+	}
+	.contact-block {
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+@include bp(min-width, $bp-medium + 1) {
+	footer {
+		h4 {
+			margin-bottom: 20px;
+		}
+	}
+	.footer-container {
+		padding: 50px;
+	}
+	.contact-block {
+		float: right;
+		text-align: right;
+		address {
+			text-align: right;
+		}
+	}
+	.sign-up {
+		display: inline-block;
+		vertical-align: bottom;
+		width: 40%;
+		margin-right: 9%;
+		margin-bottom: 0;
+		input[type="text"] {
+			margin-bottom: 0;
+		}
+	}
+	.copyright {
+		display: inline-block;
+		vertical-align: bottom;
+		width: 50%;
+		text-align: right;
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@include bp(min-width, $bp-large + 1) {
+
+}
+
+@include bp(min-width, $bp-xlarge + 1) {
+
+}

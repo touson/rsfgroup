@@ -1,50 +1,50 @@
 @extends('master')
 
 @section('content')
-<div class="container">
+<div class="container full">
 	<div id="hp-slider">
 		<div class="slide">
-			<img src="images/slideshow/smiling-plumber.jpg" alt="Emergency response 24/7">
-			<div class="title">
-				<div class="primary">Emergency response 24/7</div>
-				<div class="secondary">
-					<div>Helping to ensure <strong>your family</strong> stay warm and cosy this winter.</div>
-				</div>
-			</div>
-		</div>
-		<div class="slide">
-			<img src="images/slideshow/smiling-plumber.jpg" alt="Emergency response 24/7">
-			<div class="title">
-				<div class="primary">Certified Plumbers</div>
-				<div class="secondary">
-					<div>Helping to ensure <strong>your family</strong> stay warm and cosy this winter.</div>
-				</div>
-			</div>
-		</div>
-		<div class="slide">
-			<img src="images/slideshow/smiling-plumber.jpg" alt="Emergency response 24/7">
-			<div class="title">
-				<div class="primary">Landlord Services</div>
-				<div class="secondary">
-					<div>Helping to ensure <strong>your family</strong> stay warm and cosy this winter.</div>
-				</div>
-			</div>
-		</div>
-		<div class="slide">
-			<img src="images/slideshow/smiling-plumber.jpg" alt="Emergency response 24/7">
+			<img src="images/slideshow/customer-signing.jpg" alt="Boiler Servicing">
 			<div class="title">
 				<div class="primary">Boiler Servicing</div>
 				<div class="secondary">
-					<div>Helping to ensure <strong>your family</strong> stay warm and cosy this winter.</div>
+					<div>Domestic boiler servicing to prolong the life of your boiler.</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
+			<img src="images/slideshow/girl-and-dog.jpg" alt="Emergency response 24/7">
+			<div class="title">
+				<div class="primary">Emergency response 24/7</div>
+				<div class="secondary">
+					<div>Peace of mind that <strong>your family</strong> stay warm and cosy this winter.</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
+			<img src="images/slideshow/smiling-plumber.jpg" alt="Certified Plumbers">
+			<div class="title">
+				<div class="primary">Certified Plumbers</div>
+				<div class="secondary">
+					<div>All our engineers are fully qualified and work to the highest standards.</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
+			<img src="images/slideshow/man-with-van.jpg" alt="Landlord Services">
+			<div class="title">
+				<div class="primary">Landlord Services</div>
+				<div class="secondary">
+					<div>All work certified to building regulations and at a reasonable price.</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div id="slide-selector">
-		<a data-slide-index="0">Emergency boiler repairs<span></span></a>
-		<a data-slide-index="1">Certified Plumbers<span></span></a>
-		<a data-slide-index="2">Landlord Services<span></span></a>
-		<a data-slide-index="3">Boiler Servicing<span></span></a>
+		<a data-slide-index="0">Boiler Servicing<span></span></a>
+		<a data-slide-index="1">Emergency boiler repairs<span></span></a>
+		<a data-slide-index="2">Certified Plumbers<span></span></a>
+		<a data-slide-index="3">Landlord Services<span></span></a>
 	</div>
 </div>
 
@@ -81,6 +81,76 @@
 	<div class="container">
 		<div class="testimonials">
 			<h3>Customer Testimonials</h3>
+			<div class="testimonial">
+				<span class="open-quote"></span>
+				@include('partials.5-stars')
+				<div class="testimonial-content">
+					<div class="title">We can’t thank him or you enough!</div>
+					<div class="body">
+						<p>Thank you for the fast and professional service yesterday. This is our second appointment with your company and both have been positive. Your technician Jef was professional, courteous and went above and beyond our expectations. We can’t thank him or you enough! Harris Plumbing was quick to respond and we will gladly recommend you.</p>
+						<p class="person"><strong>Mrs Belkin</strong>Wembley</p>
+					</div>
+				</div>
+				<span class="close-quote"></span>
+			</div>
+			<div class="testimonial">
+				<span class="open-quote"></span>
+				@include('partials.5-stars')
+				<div class="testimonial-content">
+					<div class="testimonial-content">
+						<div class="title">These guys are very professional</div>
+						<div class="body">
+							<p>I want to express my gratitude towards the service of Harris Plumbing. These guys are very professional and take pride on the work that they do. I had Jef install a Navien tankless water heater for my home and was very pleased on the workmanship of the installation. He was very thorough and Jef’s main concern was to make sure the job was done right.</p>
+							<p>Since then I had a brand new sump pump installed and a few minor issues taken care of. They are a very courteous group of employees and I definitely made the right decision contacting them to do the work in my home.</p>
+							<p class="person"><strong>John Simmons</strong>Newbury</p>
+						</div>
+					</div>
+				<span class="close-quote"></span>
+				</div>
+			</div>
+			<div class="testimonial">
+				<span class="open-quote"></span>
+				@include('partials.5-stars')
+				<div class="testimonial-content">
+					<div class="testimonial-content">
+						<div class="title">We can’t thank him or you enough!</div>
+						<div class="body">
+							<p>Thank you for the fast and professional service yesterday. This is our second appointment with your company and both have been positive.</p>
+							<p class="person"><strong>Mrs Belkin</strong>Wembley</p>
+						</div>
+					</div>
+				</div>
+				<span class="close-quote"></span>
+			</div>
+			<div class="testimonial">
+				<span class="open-quote"></span>
+				@include('partials.5-stars')
+				<div class="testimonial-content">
+					<div class="testimonial-content">
+						<div class="title">These guys are very professional</div>
+						<div class="body">
+							<p>I want to express my gratitude towards the service of Harris Plumbing. These guys are very professional and take pride on the work that they do. I had Jef install a Navien tankless water heater for my home and was very pleased on the workmanship of the installation. He was very thorough and Jef’s main concern was to make sure the job was done right.</p>
+							<p>Since then I had a brand new sump pump installed and a few minor issues taken care of. They are a very courteous group of employees and I definitely made the right decision contacting them to do the work in my home.</p>
+							<p class="person"><strong>John Simmons</strong>Newbury</p>
+						</div>
+					</div>
+				<span class="close-quote"></span>
+				</div>
+			</div>
+			<div class="testimonial">
+				<span class="open-quote"></span>
+				@include('partials.5-stars')
+				<div class="testimonial-content">
+					<div class="testimonial-content">
+						<div class="title">We can’t thank him or you enough!</div>
+						<div class="body">
+							<p>Thank you for the fast and professional service yesterday. This is our second appointment with your company and both have been positive.</p>
+							<p class="person"><strong>Mrs Belkin</strong>Wembley</p>
+						</div>
+					</div>
+				</div>
+				<span class="close-quote"></span>
+			</div>
 			<div class="testimonial">
 				<span class="open-quote"></span>
 				@include('partials.5-stars')
@@ -210,7 +280,7 @@
 			</div>
 			<div class="brand-container">
 				<div class="cell">
-					<img src="images/boiler-brands/xxx.jpg" alt="Baxi">
+					<img src="images/boiler-brands/worcester.jpg" alt="Baxi">
 				</div>
 			</div>
 		</div>

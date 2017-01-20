@@ -1,7 +1,7 @@
 # note: this should never truly be refernced since we are using relative assets
 http_path = "htdocs"
 css_dir = "../../../public/css"
-sass_dir = "../sass"
+sass_dir = "../scss"
 images_dir = "../../../public/images"
 javascripts_dir = "../js"
 

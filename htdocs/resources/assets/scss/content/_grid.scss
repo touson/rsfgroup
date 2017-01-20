@@ -10,7 +10,10 @@
 		margin-left: 2%;
 		margin-right: 2%;
 		margin-bottom: $gap;
-		width: 100%;
+		width: 96%;
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 	p {
 		font-size: 14px;
@@ -58,7 +61,11 @@
 }
 
 @include bp(min-width, $bp-large + 1) {
-
+	.col-set {
+		& > * {
+			margin-bottom: 0;
+		}
+	}
 }
 
 @include bp(min-width, $bp-xlarge + 1) {

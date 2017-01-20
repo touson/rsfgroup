@@ -1,5 +1,74 @@
+ $(function($) {
+	/**
+	 * equalHeights
+	 * ------------
+	 * Sets all items in the group to be of equal heights
+	 */
+	$.fn.equalHeights = function() {
+		var maxHeight = 0,
+		$this = $(this);
+		$this.css('height', 'initial');
+		$this.each( function() {
+			var height = $(this).innerHeight();
+			if ( height > maxHeight ) { maxHeight = height; }
+		});
+		return $this.css('height', maxHeight);
+	};
+	/**
+	 * Markup driven, targetted equalHeights
+	 * -------------------------------------
+	 * Alls an individual DOM element to be resized to match another
+	 * by adding the selector class in a data-equal attribute
+	 */
+	$('[data-equal]').each(function(){
+		var $this = $(this),
+		target = $this.data('equal');
+		$this.find(target).equalHeights();
+	});
+
+	/**
+	 * scrollToAnchor
+	 * --------------
+	 * Allow easy page scrolling to specific point
+	 * @usage 	$('.btn-reviews').scrollToAnchor({ anchor: '#reviews-anchor' });
+	 */
+	$.fn.scrollToAnchor = function() {
+		var options = $.extend({
+			anchor : '.scroll',
+			setupCallback : null
+		}, arguments[0] || {});
+
+		return this.each(function() {
+			$(this).click(function(e) {
+				$('html,body').animate({scrollTop: $(options.anchor).offset().top}, 500);
+				$.isFunction( options.setupCallback ) && options.setupCallback.call( this );
+				e.preventDefault();
+			});
+		});
+	}
+
+	/**
+	 * delayed-resize event trigger
+	 * ----------------------------
+	 * Fires the window 'delayed-resize' event 150ms after the window has been resized
+	 */
+	var resizeTimer;
+	$(window).resize(function (e) {
+		clearTimeout(resizeTimer);
+		resizeTimer = setTimeout(function () {
+			$(window).trigger('delayed-resize', e);
+		}, 150);
+		repositionTestimonials();
+	});
+});
+
+// Set the homepage panel H2 tags to be of equal heights when window is resized.
+$(window).on('delayed-resize', function() {
+	$('.hp-panels h2').equalHeights();
+});
+
 $(document).ready(function(){
-	$('#hp-slider').bxSlider({
+	hpCarousel = $('#hp-slider').bxSlider({
 		mode: 'fade',
 		speed: 500,
 		pager: true,
@@ -9,4 +78,60 @@ $(document).ready(function(){
 		controls: false,
 		autoHover: true
 	});
+	$('#ellipse').click(function(){
+		$('.main-nav').toggleClass('active');
+	});
+	$('.main-nav .parent').click(function(e){
+		e.preventDefault();
+		var $elem = $(this);
+		var active = $elem.hasClass('active');
+		$('.main-nav .parent').removeClass('active');
+		if(!active) {
+			$elem.addClass('active');
+		}
+	});
+	$(window).trigger('delayed-resize');
+
+	repositionTestimonials();
 });
+
+/**
+ * Reposition Testimonials
+ * -----------------------
+ * Sets the css value for each testimonial block by checking the top and height
+ * of the one directly above it.  This function also calculates the total height
+ * of the columns and sets the height value of the container as all the children
+ * are absolutely positioned.
+ */
+function repositionTestimonials() {
+	var $testimonials = $('.testimonial');
+	if($(window).width() > 600) {
+		// Keep track of both column heights to determine the container size
+		var heights = [0,0];
+		$testimonials.each(function(i, testimonial){
+			if(i > 1) {
+				// Get the height and top position of the testimonial
+				// block above the current one
+				var $oneAbove = $($testimonials[i - 2]);
+				var height = $oneAbove.outerHeight();
+				var topAbove = parseInt($oneAbove.css('top'));
+				var top = topAbove + height + 20;
+				// Set the top value for the current testimonial based on
+				// the position and size of the one above
+				$(testimonial).css('top', top + 'px');
+			} else {
+				var height = $(testimonial).outerHeight();
+			}
+			// Calculate the height of each column
+			heights[i % 2] += height + 20;
+		});
+		// Set the testimonials container height based
+		// on the highest of the 2 columns
+		var highest = Math.max.apply(Math, heights);
+		highest += 20;
+		$('.testimonials').css('height', highest + 'px');
+	} else {
+		$testimonials.css('top', 'initial');
+		$('.testimonials').css('height', 'auto');
+	}
+}
