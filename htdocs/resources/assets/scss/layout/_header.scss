@@ -142,7 +142,11 @@ nav {
 		}
 	}
 	nav {
+		z-index: 1000;
+		@include box-shadow(0, 3px, 20px, rgba(0,0,0,0.5));
 		.main-nav {
+			max-height: initial;
+			overflow: visible;
 			& > li {
 				display: inline-block;
 				vertical-align: top;
@@ -161,12 +165,16 @@ nav {
 				position: relative;
 				margin-left: 5px;
 			}
-			// needs after to show down triangle
-			& + ul {
-				display: none;
-				li {
-					a {
+			&.active {
+				// needs after to show down triangle
+				& + ul {
+					position: absolute;
+					top: 100%;
+					background: $c-lgrey;
+					li {
+						a {
 
+						}
 					}
 				}
 			}

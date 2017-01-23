@@ -701,8 +701,14 @@ ul {
   padding: 0;
 }
 
+ul.tick {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
 ul.tick li {
   position: relative;
+  padding-left: 20px;
+  padding-bottom: 6px;
 }
 ul.tick li:before {
   font-family: "ufhs" !important;
@@ -1180,6 +1186,16 @@ nav .parent.active + ul {
     display: block;
   }
 
+  nav {
+    z-index: 1000;
+    -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  }
+  nav .main-nav {
+    max-height: initial;
+    overflow: visible;
+  }
   nav .main-nav > li {
     display: inline-block;
     vertical-align: top;
@@ -1204,8 +1220,10 @@ nav .parent.active + ul {
     position: relative;
     margin-left: 5px;
   }
-  nav .parent + ul {
-    display: none;
+  nav .parent.active + ul {
+    position: absolute;
+    top: 100%;
+    background: #ebebeb;
   }
 
   #ellipse {

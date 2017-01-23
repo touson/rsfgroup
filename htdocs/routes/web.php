@@ -11,6 +11,30 @@
 |
 */
 
+Route::get('guarantees', function () {
+    return view('pages.guarantees');
+});
+Route::get('plumbing', function () {
+    return view('pages.plumbing');
+});
+Route::get('heating', function () {
+    return view('pages.heating');
+});
+Route::get('boilers', function () {
+    return view('pages.boilers');
+});
+Route::get('areas-covered', function () {
+    return view('pages.areas');
+});
+Route::get('contact-us', function () {
+    return view('pages.contact');
+});
+Route::get('commercial', function () {
+    return view('pages.commercial');
+});
+Route::get('about-us', function () {
+    return view('pages.about');
+});
 Route::get('/', function () {
     return view('pages.home');
 });

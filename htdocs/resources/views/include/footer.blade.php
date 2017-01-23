@@ -43,26 +43,27 @@
 				<li><a href="#">Plumbing</a></li>
 				<li><a href="#">Mobile engineers</a></li>
 				<li><a href="#">24/7 availability</a></li>
-				<li><a href="#">Areas covered</a></li>
+				<li><a href="/areas-covered">Areas covered</a></li>
 				<li><a href="#">Case studies</a></li>
 			</ul>
 		</div>
 		<div class="footer-block">
 			<h4>Domestic</h4>
 			<ul class="arrow yellow">
-				<li><a href="#">Heating</a></li>
-				<li><a href="#">Gas</a></li>
+				<li><a href="/heating">Heating</a></li>
+				<li><a href="/gas">Gas</a></li>
 				<li><a href="#">Electrics</a></li>
-				<li><a href="#">Plumbing</a></li>
+				<li><a href="/plumbing">Plumbing</a></li>
 				<li><a href="#">24/7 availability</a></li>
 			</ul>
 		</div>
 		<div class="footer-block">
 			<h4>Company</h4>
 			<ul class="arrow bblue">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About us</a></li>
-				<li><a href="#">Contact Us</a></li>
+				<li><a href="/">Home</a></li>
+				<li><a href="/about-us">About us</a></li>
+				<li><a href="/contact-us">Contact Us</a></li>
+				<li><a href="/guarantees">Guarantees</a></li>
 			</ul>
 		</div>
 		<div class="contact-block">

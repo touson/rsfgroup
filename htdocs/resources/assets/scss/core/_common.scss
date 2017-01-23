@@ -44,17 +44,19 @@ ul {
 	padding: 0;
 }
 
-ul {
-	&.tick {
-		li {
-			position: relative;
-			@include font-icon('I');
-			&:before {
-				position: absolute;
-				font-size: $f-size-l;
-				left: 0;
-				color: $c-primary;
-			}
+ul.tick {
+	padding-left: 20px;
+	margin-bottom: 20px;
+	li {
+		position: relative;
+		@include font-icon('I');
+		padding-left: 20px;
+		padding-bottom: 6px;
+		&:before {
+			position: absolute;
+			font-size: $f-size-l;
+			left: 0;
+			color: $c-primary;
 		}
 	}
 }
