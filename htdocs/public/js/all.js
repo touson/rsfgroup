@@ -4,27 +4,27 @@
 	 * ------------
 	 * Sets all items in the group to be of equal heights
 	 */
-	$.fn.equalHeights = function() {
-		var maxHeight = 0,
-		$this = $(this);
-		$this.css('height', 'initial');
-		$this.each( function() {
-			var height = $(this).innerHeight();
-			if ( height > maxHeight ) { maxHeight = height; }
-		});
-		return $this.css('height', maxHeight);
-	};
+	 $.fn.equalHeights = function() {
+	 	var maxHeight = 0,
+	 	$this = $(this);
+	 	$this.css('height', 'initial');
+	 	$this.each( function() {
+	 		var height = $(this).innerHeight();
+	 		if ( height > maxHeight ) { maxHeight = height; }
+	 	});
+	 	return $this.css('height', maxHeight);
+	 };
 	/**
 	 * Markup driven, targetted equalHeights
 	 * -------------------------------------
 	 * Alls an individual DOM element to be resized to match another
 	 * by adding the selector class in a data-equal attribute
 	 */
-	$('[data-equal]').each(function(){
-		var $this = $(this),
-		target = $this.data('equal');
-		$this.find(target).equalHeights();
-	});
+	 $('[data-equal]').each(function(){
+	 	var $this = $(this),
+	 	target = $this.data('equal');
+	 	$this.find(target).equalHeights();
+	 });
 
 	/**
 	 * scrollToAnchor
@@ -32,35 +32,35 @@
 	 * Allow easy page scrolling to specific point
 	 * @usage 	$('.btn-reviews').scrollToAnchor({ anchor: '#reviews-anchor' });
 	 */
-	$.fn.scrollToAnchor = function() {
-		var options = $.extend({
-			anchor : '.scroll',
-			setupCallback : null
-		}, arguments[0] || {});
+	 $.fn.scrollToAnchor = function() {
+	 	var options = $.extend({
+	 		anchor : '.scroll',
+	 		setupCallback : null
+	 	}, arguments[0] || {});
 
-		return this.each(function() {
-			$(this).click(function(e) {
-				$('html,body').animate({scrollTop: $(options.anchor).offset().top}, 500);
-				$.isFunction( options.setupCallback ) && options.setupCallback.call( this );
-				e.preventDefault();
-			});
-		});
-	}
+	 	return this.each(function() {
+	 		$(this).click(function(e) {
+	 			$('html,body').animate({scrollTop: $(options.anchor).offset().top}, 500);
+	 			$.isFunction( options.setupCallback ) && options.setupCallback.call( this );
+	 			e.preventDefault();
+	 		});
+	 	});
+	 }
 
 	/**
 	 * delayed-resize event trigger
 	 * ----------------------------
 	 * Fires the window 'delayed-resize' event 150ms after the window has been resized
 	 */
-	var resizeTimer;
-	$(window).resize(function (e) {
-		clearTimeout(resizeTimer);
-		resizeTimer = setTimeout(function () {
-			$(window).trigger('delayed-resize', e);
-		}, 150);
-		repositionTestimonials();
+	 var resizeTimer;
+	 $(window).resize(function (e) {
+	 	clearTimeout(resizeTimer);
+	 	resizeTimer = setTimeout(function () {
+	 		$(window).trigger('delayed-resize', e);
+	 	}, 150);
+	 	repositionTestimonials();
+	 });
 	});
-});
 
 // Set the homepage panel H2 tags to be of equal heights when window is resized.
 $(window).on('delayed-resize', function() {
@@ -81,15 +81,20 @@ $(document).ready(function(){
 	$('#ellipse').click(function(){
 		$('.main-nav').toggleClass('active');
 	});
-	$('.main-nav .parent').click(function(e){
-		e.preventDefault();
-		var $elem = $(this);
-		var active = $elem.hasClass('active');
-		$('.main-nav .parent').removeClass('active');
-		if(!active) {
-			$elem.addClass('active');
-		}
-	});
+	$('.main-nav .parent')
+		.mouseenter(function(e){
+			e.preventDefault();
+			var $elem = $(this);
+			var active = $elem.hasClass('active');
+			$('.main-nav .parent').removeClass('active');
+			if(!active) {
+				$elem.addClass('active');
+			}
+		})
+		.mouseleave(function(){
+			$('.main-nav .parent').removeClass('active');
+		});
+
 	$(window).trigger('delayed-resize');
 
 	repositionTestimonials();
@@ -103,9 +108,9 @@ $(document).ready(function(){
  * of the columns and sets the height value of the container as all the children
  * are absolutely positioned.
  */
-function repositionTestimonials() {
-	var $testimonials = $('.testimonial');
-	if($(window).width() > 600) {
+ function repositionTestimonials() {
+ 	var $testimonials = $('.testimonial');
+ 	if($(window).width() > 600) {
 		// Keep track of both column heights to determine the container size
 		var heights = [0,0];
 		$testimonials.each(function(i, testimonial){

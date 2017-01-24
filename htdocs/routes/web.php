@@ -14,6 +14,9 @@
 Route::get('guarantees', function () {
     return view('pages.guarantees');
 });
+Route::get('electrical', function () {
+    return view('pages.electrical');
+});
 Route::get('plumbing', function () {
     return view('pages.plumbing');
 });

@@ -31,7 +31,7 @@
     thead {
     	th {
 	        font-weight: bold;
-	        border-left: 1px solid $c-border!important;
+	        border-left: 1px solid $c-border;
 	        border-right: 1px solid $c-border;
 	        :first-of-type {
 		        border-left: none!important;
@@ -79,9 +79,9 @@ table.top-and-side {
 		    border-right: none;
 		    border-top: none;
 		    border-bottom: 2px solid $c-border-dark;
-		    :first-of-type {
+		    &:first-of-type {
 			    border-right: 2px solid $c-border-dark;
-			    border-left: none!important;
+			    border-left: none;
 			}
 		}
 	}

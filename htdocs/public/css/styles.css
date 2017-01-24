@@ -609,7 +609,7 @@ table.top-and-side tr td:first-of-type {
 }
 .table thead th, table.side thead th, table.top-and-side thead th {
   font-weight: bold;
-  border-left: 1px solid #A7A9AB !important;
+  border-left: 1px solid #A7A9AB;
   border-right: 1px solid #A7A9AB;
 }
 .table thead th :first-of-type, table.side thead th :first-of-type, table.top-and-side thead th :first-of-type {
@@ -649,9 +649,9 @@ table.top-and-side thead th {
   border-top: none;
   border-bottom: 2px solid #737679;
 }
-table.top-and-side thead th :first-of-type {
+table.top-and-side thead th:first-of-type {
   border-right: 2px solid #737679;
-  border-left: none !important;
+  border-left: none;
 }
 table.top-and-side tbody th {
   border-right: 2px solid #737679;
@@ -1828,6 +1828,10 @@ footer ul.arrow li {
   .boiler-brands .brand-container:last-of-type {
     margin-right: 0;
   }
+}
+.timeslot span {
+  display: inline-block;
+  width: 80px;
 }
 
 /*# sourceMappingURL=styles.css.map */
