@@ -83,7 +83,6 @@ $(document).ready(function(){
 	});
 	$('.main-nav .parent')
 		.mouseenter(function(e){
-			e.preventDefault();
 			var $elem = $(this);
 			var active = $elem.hasClass('active');
 			$('.main-nav .parent').removeClass('active');

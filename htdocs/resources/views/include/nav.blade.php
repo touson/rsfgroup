@@ -2,8 +2,8 @@
 	<div class="container">
 		<ul class="main-nav">
 			<li><a href="/">Home</a></li>
-			<li>
-				<a href="/plumbing" class="parent">Plumbing</a>
+			<li class="parent">
+				<a href="/plumbing">Plumbing</a>
 				<ul>
 					<li><a href="#">1</a></li>
 					<li><a href="#">2</a></li>
@@ -13,8 +13,8 @@
 					<li><a href="#">6</a></li>
 				</ul>
 			</li>
-			<li>
-				<a href="/heating" class="parent">Heating</a>
+			<li class="parent">
+				<a href="/heating">Heating</a>
 				<ul>
 					<li><a href="#">1</a></li>
 					<li><a href="#">2</a></li>
@@ -24,8 +24,8 @@
 					<li><a href="#">6</a></li>
 				</ul>
 			</li>
-			<li>
-				<a href="/boilers" class="parent">Boilers</a>
+			<li class="parent">
+				<a href="/boilers">Boilers</a>
 				<ul>
 					<li><a href="#">1</a></li>
 					<li><a href="#">2</a></li>

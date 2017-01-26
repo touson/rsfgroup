@@ -36,6 +36,11 @@ nav {
 		overflow: hidden;
 		max-height: 0;
 		@include transition(all 0.4s cubic-bezier(0.5, 0, 0.5, 1));
+		&.active {
+			max-height: 700px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
 		li {
 			display: block;
 			a {
@@ -51,36 +56,29 @@ nav {
 				}
 			}
 		}
-		&.active {
-			max-height: 700px;
-			padding-top: 10px;
-			padding-bottom: 10px;
-		}
 	}
 	.parent {
-		&:after {
-			@include triangle(down, 10px, $c-blue);
-			display: inline-block;
-			vertical-align: middle;
-			position: relative;
-			margin-left: 5px;
+		& > a {
+			padding-left: 40px;
+			&:after {
+				@include triangle(down, 10px, $c-blue);
+				display: inline-block;
+				vertical-align: middle;
+				position: relative;
+				margin-left: 10px;
+			}
 		}
 		// needs after to show down triangle
-		& + ul {
+		ul {
 			max-height: 0;
 			overflow: hidden;
 			@include transition(max-height 0.4s cubic-bezier(0.5, 0, 0.5, 1));
 			a {
 				padding-left: 40px;
 			}
-			li {
-				a {
-					padding-left: 40px;
-				}
-			}
 		}
 		&.active {
-			& + ul {
+			ul {
 				max-height: 300px;
 			}
 		}
@@ -144,38 +142,38 @@ nav {
 	nav {
 		z-index: 1000;
 		@include box-shadow(0, 3px, 20px, rgba(0,0,0,0.5));
+		padding: 0;
+		.container {
+			margin: 0;
+		}
 		.main-nav {
 			max-height: initial;
 			overflow: visible;
+			display: table;
+			width: 100%;
 			& > li {
-				display: inline-block;
-				vertical-align: top;
+				display: table-cell;
 				a {
-					font-size: 15px;
+					text-align: center;
+					font-size: 13px;
 					font-weight: 400;
-					padding: 12px 30px;
+					padding: 12px 5px;
 				}
 			}
 		}
 		.parent {
-			&:after {
-				@include triangle(down, 10px, $c-blue);
-				display: inline-block;
-				vertical-align: middle;
-				position: relative;
-				margin-left: 5px;
+			ul {
+				position: absolute;
+				top: 100%;
+				background: $c-lgrey;
+				li {
+					width: 100px;
+				}
 			}
 			&.active {
-				// needs after to show down triangle
-				& + ul {
-					position: absolute;
-					top: 100%;
-					background: $c-lgrey;
-					li {
-						a {
 
-						}
-					}
+				ul {
+					max-height: 300px;
 				}
 			}
 		}
@@ -202,8 +200,21 @@ nav {
 			margin-right: 30px;
 		}
 	}
+	nav {
+		.main-nav {
+			& > li {
+				a {
+					font-size: 15px;
+				}
+			}
+		}
+	}
 }
 
 @include bp(min-width, $bp-xlarge + 1) {
-
+	nav {
+		.container {
+			margin: 0 auto;
+		}
+	}
 }
