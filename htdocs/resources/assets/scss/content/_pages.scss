@@ -5,3 +5,26 @@
 		width: 80px;
 	}
 }
+
+
+/**
+ * Contact Page
+ */
+#contact-form {
+	margin-bottom: 30px;
+}
+
+#contact-map {
+	height: 400px;
+	border: 1px solid $c-grey;
+	@include box-shadow(0, 0, 20px, rgba(0,0,0,0.2));
+	margin-bottom: 20px;
+	margin-top: 60px;
+}
+
+.contact-us {
+	address {
+		color: $c-text;
+		font-size: 15px;
+	}
+}

@@ -21,7 +21,7 @@
 		<link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
 	</head>
-	<body>
+	<body class="{{ $page }}">
 		@include('include.header')
 		<div class="main-container">
 			@yield('content')
@@ -30,5 +30,7 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script src="/js/all.js"></script>
+
+		@yield('scripts')
 	</body>
 </html>

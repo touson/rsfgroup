@@ -12,32 +12,32 @@
 */
 
 Route::get('guarantees', function () {
-    return view('pages.guarantees');
+    return view('pages.guarantees', ['page' => 'guarantees']);
 });
 Route::get('electrical', function () {
-    return view('pages.electrical');
+    return view('pages.electrical', ['page' => 'electrical']);
 });
 Route::get('plumbing', function () {
-    return view('pages.plumbing');
+    return view('pages.plumbing', ['page' => 'plumbing']);
 });
 Route::get('heating', function () {
-    return view('pages.heating');
+    return view('pages.heating', ['page' => 'heating']);
 });
 Route::get('boilers', function () {
-    return view('pages.boilers');
+    return view('pages.boilers', ['page' => 'boilers']);
 });
 Route::get('areas-covered', function () {
-    return view('pages.areas');
+    return view('pages.areas', ['page' => 'areas-covered']);
 });
 Route::get('contact-us', function () {
-    return view('pages.contact');
+    return view('pages.contact', ['page' => 'contact-us']);
 });
 Route::get('commercial', function () {
-    return view('pages.commercial');
+    return view('pages.commercial', ['page' => 'commercial']);
 });
 Route::get('about-us', function () {
-    return view('pages.about');
+    return view('pages.about', ['page' => 'about-us']);
 });
 Route::get('/', function () {
-    return view('pages.home');
+    return view('pages.home', ['page' => 'home']);
 });

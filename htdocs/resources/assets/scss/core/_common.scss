@@ -10,12 +10,7 @@
  * Base Styles
  * ============================================ */
 
-body,
-button,
-input,
-select,
-table,
-textarea {
+body {
 	font-family: $f-stack-special;
 	color: $c-text;
 	font-size: $f-size;
@@ -35,6 +30,12 @@ a {
 		outline-color: $c-link-active;
 		color: darken($c-action, 30%);
 	}
+}
+
+p {
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 20px;
 }
 
 ol,
@@ -108,48 +109,6 @@ ul.arrow {
  h6, .h6 { @include h6; }
 
 /* -------------------------------------------- *
- * Breadcrumbs
- */
-
- .breadcrumbs {
- 	overflow: hidden;
- 	margin: -15px 0 15px;
- 	li {
- 		float: left;
- 		font-size: $f-size-xs;
- 		text-transform: none;
- 		&:last-child {
- 			strong {
- 				color: $c-primary;
- 			}
- 		}
- 		a {
- 			float: left;
- 			color: $c-text;
- 			text-decoration: none;
- 			&:hover {
- 				color: $c-action;
- 				text-decoration: underline;
- 			}
- 		}
- 		strong {
- 			color: $c-text;
- 			font-weight: normal;
- 		}
- 		span {
- 			float: left;
- 			padding: 0 7px;
- 		}
- 	}
-
- 	@include bp(max-width, $bp-medium) {
- 		.breadcrumbs {
- 			display: none;
- 		}
- 	}
- }
-
-/* -------------------------------------------- *
  * Messages
  */
  .success {
@@ -206,10 +165,13 @@ ul.arrow {
  	background: $c-red;
  }
 
-/* ============================================ *
- * Before Icons
- * ============================================ */
-
- .icon-as-seen-tv {
- 	@include font-icon('H');
- }
+.call-us-on {
+	strong {
+		font-size: 26px;
+		font-weight: 600;
+		display: block;
+		margin-bottom: 20px;
+		color: $c-blue;
+		line-height: 36px;
+	}
+}

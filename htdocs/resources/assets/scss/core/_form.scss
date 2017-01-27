@@ -1,74 +1,37 @@
 @charset "UTF-8";
 
-/* ============================================ *
- * FORMS - COMMON
- * ============================================ */
-
-
+.form-group {
+	padding-bottom: 15px;
+	&:last-child {
+		padding-bottom: 0;
+	}
+}
 /* -------------------------------------------- *
  * Labels
  */
 
 label {
     display: inline-block;
-    font-size: $f-size;
+    font-size: 14px;
     font-weight: 300;
-    @include not-selectable;
-}
-
-label.required:after,
-span.required:after {
-    content: ' *';
-    color: $c-danger;
-    font-weight: normal;
-    font-family: $f-stack-sans;
-    font-size: $f-size-xs;
-}
-
-label.required em,
-span.required em {
-    display: none;
-}
-
-/* -------------------------------------------- *
- * Textarea
- */
-
-textarea {
-    @include box-sizing(border-box);
-    width: 100%;
-    max-width: 450px;
-    padding: 5px;
 }
 
 /* -------------------------------------------- *
  * Inputs
  */
 
-.input-text {
-    border: 1px solid darken($c-lgrey, 10%);
-    background: $c-white;
-    font-size: $f-size-xs;
-    font-weight: 300;
-    &.validation-failed {
-	    border-color: $c-danger;
-	    &:focus {
-		    outline-color: tint($c-danger, 50%);
-		}
-	}
-}
-
+textarea,
 input[type=email],
 input[type=search],
 input[type=number],
 input[type=password],
 input[type=tel],
 input[type=text] {
-    height: 30px;
-    padding: 0 8px;
+    padding: 12px 16px;
     width: 100%;
-    max-width: 100%;
-    @include border-radius(5px);
+    font-size: 14px;
+    border: 1px solid darken($c-lgrey, 10%);
+    @include border-radius(3px);
 }
 
 @include bp(min-width, $bp-xsmall + 1) {
@@ -82,40 +45,18 @@ input[type=text] {
     }
 }
 
-/* Only show on iPhones (not iPads or any other device) */
-@media only screen and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 0) {
-    input[type=email],
-    input[type=search],
-    input[type=number],
-    input[type=password],
-    input[type=tel],
-    input[type=text],
-    select {
-        font-size: 16px; /* Prevent from zooming on focus */
-    }
-}
-
-/* -------------------------------------------- *
- * Inputs - Quantity
- */
-
-input[type=number].qty,
-input[type=text].qty {
-    width: 3em;
-    text-align: center;
-    vertical-align: middle;
-}
-
 /* -------------------------------------------- *
  * Placeholder
  */
 
 ::-webkit-input-placeholder {
     color: $c-input-placeholder;
+    font-weight: 300;
 }
 
 input:-moz-placeholder {
     color: $c-input-placeholder;
+    font-weight: 300;
 }
 
 /* -------------------------------------------- *

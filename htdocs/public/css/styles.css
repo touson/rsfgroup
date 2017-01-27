@@ -156,9 +156,6 @@ $mq-fixed-value: 1024;
 .col-set > *:last-child {
   margin-bottom: 0;
 }
-.col-set p {
-  font-size: 14px;
-}
 
 @media only screen and (min-width: 480px) {
   .col-set .col-4 {
@@ -337,8 +334,15 @@ textarea {
  * ============================================ */
 button {
   border: 0;
-  background: #A7A9AB;
-  padding: 4px 12px;
+  background: #0E5A94;
+  padding: 12px 20px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
 }
 
 /* Primary Buttons */
@@ -389,9 +393,13 @@ button {
   color: #ffffff;
 }
 
-/* ============================================ *
- * FORMS - COMMON
- * ============================================ */
+.form-group {
+  padding-bottom: 15px;
+}
+.form-group:last-child {
+  padding-bottom: 0;
+}
+
 /* -------------------------------------------- *
  * Labels
  */
@@ -399,67 +407,24 @@ label {
   display: inline-block;
   font-size: 14px;
   font-weight: 300;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-
-label.required:after,
-span.required:after {
-  content: ' *';
-  color: #E60004;
-  font-weight: normal;
-  font-family: Open Sans, Verdana, Geneva, sans-serif;
-  font-size: 12px;
-}
-
-label.required em,
-span.required em {
-  display: none;
-}
-
-/* -------------------------------------------- *
- * Textarea
- */
-textarea {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 450px;
-  padding: 5px;
 }
 
 /* -------------------------------------------- *
  * Inputs
  */
-.input-text {
-  border: 1px solid #d2d2d2;
-  background: #ffffff;
-  font-size: 12px;
-  font-weight: 300;
-}
-.input-text.validation-failed {
-  border-color: #E60004;
-}
-.input-text.validation-failed:focus {
-  outline-color: #f38082;
-}
-
+textarea,
 input[type=email],
 input[type=search],
 input[type=number],
 input[type=password],
 input[type=tel],
 input[type=text] {
-  height: 30px;
-  padding: 0 8px;
+  padding: 12px 16px;
   width: 100%;
-  max-width: 100%;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  font-size: 14px;
+  border: 1px solid #d2d2d2;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
 }
@@ -474,38 +439,17 @@ input[type=text] {
     width: 365px;
   }
 }
-/* Only show on iPhones (not iPads or any other device) */
-@media only screen and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 0) {
-  input[type=email],
-  input[type=search],
-  input[type=number],
-  input[type=password],
-  input[type=tel],
-  input[type=text],
-  select {
-    font-size: 16px;
-    /* Prevent from zooming on focus */
-  }
-}
-/* -------------------------------------------- *
- * Inputs - Quantity
- */
-input[type=number].qty,
-input[type=text].qty {
-  width: 3em;
-  text-align: center;
-  vertical-align: middle;
-}
-
 /* -------------------------------------------- *
  * Placeholder
  */
 ::-webkit-input-placeholder {
-  color: #58585B;
+  color: #A7A9AB;
+  font-weight: 300;
 }
 
 input:-moz-placeholder {
-  color: #58585B;
+  color: #A7A9AB;
+  font-weight: 300;
 }
 
 /* -------------------------------------------- *
@@ -667,12 +611,7 @@ table.top-and-side tbody tr:last-of-type th {
 /* ============================================ *
  * Base Styles
  * ============================================ */
-body,
-button,
-input,
-select,
-table,
-textarea {
+body {
   font-family: "Roboto", arial, sans-serif;
   color: #58585B;
   font-size: 14px;
@@ -692,6 +631,12 @@ a:hover {
 a:focus {
   outline-color: #0E5A94;
   color: #0d0d0d;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
 }
 
 ol,
@@ -856,44 +801,6 @@ h6, .h6 {
 }
 
 /* -------------------------------------------- *
- * Breadcrumbs
- */
-.breadcrumbs {
-  overflow: hidden;
-  margin: -15px 0 15px;
-}
-.breadcrumbs li {
-  float: left;
-  font-size: 12px;
-  text-transform: none;
-}
-.breadcrumbs li:last-child strong {
-  color: #0E5A94;
-}
-.breadcrumbs li a {
-  float: left;
-  color: #58585B;
-  text-decoration: none;
-}
-.breadcrumbs li a:hover {
-  color: #58585B;
-  text-decoration: underline;
-}
-.breadcrumbs li strong {
-  color: #58585B;
-  font-weight: normal;
-}
-.breadcrumbs li span {
-  float: left;
-  padding: 0 7px;
-}
-@media only screen and (max-width: 767px) {
-  .breadcrumbs .breadcrumbs {
-    display: none;
-  }
-}
-
-/* -------------------------------------------- *
  * Messages
  */
 .success {
@@ -948,20 +855,13 @@ h6, .h6 {
   background: #E60004;
 }
 
-/* ============================================ *
- * Before Icons
- * ============================================ */
-.icon-as-seen-tv:before {
-  font-family: "ufhs" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  vertical-align: middle;
-  content: "H";
+.call-us-on strong {
+  font-size: 26px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 20px;
+  color: #0E5A94;
+  line-height: 36px;
 }
 
 /* ============================================ *
@@ -1838,6 +1738,28 @@ footer ul.arrow li {
 .timeslot span {
   display: inline-block;
   width: 80px;
+}
+
+/**
+ * Contact Page
+ */
+#contact-form {
+  margin-bottom: 30px;
+}
+
+#contact-map {
+  height: 400px;
+  border: 1px solid #A7A9AB;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.contact-us address {
+  color: #58585B;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
