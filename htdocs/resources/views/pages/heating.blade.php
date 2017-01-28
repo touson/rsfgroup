@@ -1,45 +1,57 @@
 @extends('master')
 
 @section('content')
-<div class="container full">
-
+<div class="page-header container">
+	<img src="/images/banners/heating.jpg" alt="" />
+	<h1>Heating</h1>
 </div>
 
 <section>
 	<div class="container">
 		<p>We are ESSEX AND SUFFOLK WATER BOARD APPROVED CONTRACTORS FOR OVER 15 YEARS</p>
+
 		<p>7 year boiler guarantee. Exclusive to RSF Group</p>
+
 		<p>Rapidly becoming a major player in the UK market the all new Vailent boilers have emerged as one of the most reliable brands available. As a result we at RSF are confident that our exclusive 7 year warranty on Vaillent boilers is based on product reliability, longevity, and the fact that we’ve had fewer breakdown call outs than any other brand.</p>
 
 		<p>As one of Essex largest independent heating and boiler (gas and electric) installer RSF provides a 24 hour service for all your heating requirements and we can usually get to you within the hour - the fastest response time of any major service company in Essex.RSF team of Gas Safe (CORGI) registered heating engineers undertake all types of breakdown repairs quickly and efficiently, including fault finding and diagnostic solutions. Our engineers design and install complete systems and can repair or upgrade your existing system wherever possible. They can also carry out a heating efficiency survey on your system.</p>
+
 		<p>RSF are recommended by the manufacturers as a preferred installers by Vaillant, Worcester and Ideal with 7 year warranties on most models. We’re so confident in the expertise of our engineers that we proudly say ‘If we can’t fix it nobody can!'</p>
+	</div>
+</section>
 
+<section>
+	<div class="container">
 		<h3>Power Flush</h3>
-		<p>A build up of corrosion in your system can create a sludge that really affects the efficiency of your boiler. This one-off deep clean makes sure your radiators heat up properly and there are no more cold spots. This helps to increase the life of the whole system, keeps heating bills down and reduces the risk of breakdowns. Prices start from £400 + VAT.</p>
-
-		<table class="table">
-			<tr>
-				<th>Power Flush Rates</th>
-				<th>Mon–Fri 7am–6pm</th>
-			</tr>
-			<tr>
-				<td>Up to 4 Radiators</td>
-				<td>£300.00 + VAT</td>
-			</tr>
-			<tr>
-				<td>5–11 Radiators</td>
-				<td>£500.00 + VAT</td>
-			</tr>
-			<tr>
-				<td>12–15 Radiators</td>
-				<td>£700.00 + VAT</td>
-			</tr>
-			<tr>
-				<td>16–20 Radiators</td>
-				<td>£900.00 + VAT</td>
-			</tr>
-		</table>
-
+		<div class="col-set">
+			<div class="col-2">
+				<p>A build up of corrosion in your system can create a sludge that really affects the efficiency of your boiler. This one-off deep clean makes sure your radiators heat up properly and there are no more cold spots. This helps to increase the life of the whole system, keeps heating bills down and reduces the risk of breakdowns. Prices start from £400 + VAT.</p>
+			</div>
+			<div class="col-2">
+				<table class="table">
+					<tr>
+						<th>Power Flush Rates</th>
+						<th>Mon–Fri 7am–6pm</th>
+					</tr>
+					<tr>
+						<td>Up to 4 Radiators</td>
+						<td>£300.00 + VAT</td>
+					</tr>
+					<tr>
+						<td>5–11 Radiators</td>
+						<td>£500.00 + VAT</td>
+					</tr>
+					<tr>
+						<td>12–15 Radiators</td>
+						<td>£700.00 + VAT</td>
+					</tr>
+					<tr>
+						<td>16–20 Radiators</td>
+						<td>£900.00 + VAT</td>
+					</tr>
+				</table>
+			</div>
+		</div>
 		<p>Power flush prices are subject to survey.</p>
 
 		<table class="top-and-side">
@@ -110,6 +122,39 @@
 		<p>Charges are per hour with a one hour minimum charge and thereafter in 15 minute units. Some work can be carried out on Estimate. See Charges for more details.</p>
 		<p>Contact Us 01708444355/07966888630- 24 Hours</p>
 
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		<h3>Heating services we provide</h3>
+		<ul class="arrow blue columns">
+			<li>Appliance installation</li>
+			<li>Appliance repair</li>
+			<li>Appliance servicing</li>
+			<li>Boiler fault finding</li>
+			<li>Boiler installs</li>
+			<li>Boiler repairs</li>
+			<li>Boiler servicing</li>
+			<li>Central heating controls</li>
+			<li>Central heating installations</li>
+			<li>Central heating pumps</li>
+			<li>Central heating repairs</li>
+			<li>Emergency 24 hour service</li>
+			<li>Gas repairs</li>
+			<li>Gas testing &amp; certificates</li>
+			<li>Immersion heaters</li>
+			<li>Radiator bleeding</li>
+			<li>Radiator installs</li>
+			<li>Radiator leaks</li>
+			<li>Radiators noise</li>
+			<li>Thermostats</li>
+			<li>Thermostatic valves</li>
+			<li>Power flushes</li>
+			<li>Vaillant Major/Preferred Installer</li>
+			<li>Vented and unvented cylinders</li>
+			<li>Worcester Preferred Installer</li>
+		</ul>
 	</div>
 </section>
 

@@ -1,12 +1,18 @@
 @extends('master')
 
 @section('content')
+
+<div class="page-header container">
+	<img src="/images/banners/contact-us.jpg" alt="" />
+	<h1>Contact Us</h1>
+</div>
+
 <section>
 	<div class="container">
 		<div class="col-set">
 			<div class="col-2">
-				<h1>Contact Us</h1>
 				<p>If your looking for a quote, need emergency assistance or would simply like to ask a question, we are always happy to help.</p>
+				<p>Simply enter your enquiry details below and one of our highly experienced team will contact you as soon as possible with a response.</p>
 				<form action="/contact-us" method="post" id="contact-form">
 					<div class="form-group">
 						<input type="text" name="name" placeholder="Name">
@@ -24,11 +30,11 @@
 						<button>Submit enquiry</button>
 					</div>
 				</form>
-				<p class="call-us-on">Call us today on <strong>01708 444 355</strong></p>
 			</div>
-			<div class="col-2">
+			<div class="col-2 map-container">
+				<p class="call-us-on">Call us today on <strong>01708 444 355</strong></p>
 				<div id="contact-map"></div>
-				<address>Concept House, 23 Billet Lane, Hornchurch, Essex, RM11 1XP</address>
+				<address><strong>RSF Group</strong> - Concept House, 23 Billet Lane, Hornchurch, Essex, RM11 1XP</address>
 			</div>
 		</div>
 	</div>
@@ -40,9 +46,14 @@
 	<script>
 		function initMap() {
 			// Create a map object and specify the DOM element for display.
+			var rsfLocation = {lat: 51.5635955, lng: 0.2153466};
 			var map = new google.maps.Map(document.getElementById('contact-map'), {
-				center: {lat: -34.397, lng: 150.644},
-				zoom: 8
+				center: rsfLocation,
+				zoom: 11
+			});
+			var marker = new google.maps.Marker({
+				position: rsfLocation,
+				map: map
 			});
 		}
 

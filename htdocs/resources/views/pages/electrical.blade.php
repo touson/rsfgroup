@@ -1,14 +1,15 @@
 @extends('master')
 
 @section('content')
-<div class="container full">
-
+<div class="page-header container">
+	<img src="/images/banners/boilers.jpg" alt="" />
+	<h1>Electrical</h1>
 </div>
 
 <section>
 	<div class="container">
-		<h1>Electrical works</h1>
-		<ul class="tick">
+		<h3>Electrical services we offer</h3>
+		<ul class="arrow blue columns">
 			<li>Additional sockets</li>
 			<li>Circuit board installs</li>
 			<li>Circuit breaker repairs</li>

@@ -1,4 +1,23 @@
 
+// ------------------------------
+// Common page header graphic
+// ------------------------------
+.page-header {
+	position: relative;
+	margin-bottom: 30px;
+	border-bottom: 8px solid $c-blue;
+	h1 {
+		background: rgba(0, 0, 0, 0.7);
+		padding: 25px 50px 25px 130px;
+		color: #ffffff;
+		font-size: 40px;
+		position: absolute;
+		left: 0;
+		top: 60%;
+		font-weight: 100;
+	}
+}
+
 .timeslot {
 	span {
 		display: inline-block;
@@ -6,10 +25,34 @@
 	}
 }
 
+.tel-block {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 500;
+	strong {
+		font-size: 160%;
+		line-height: 130%;
+		font-weight: 500;
+		color: #0E5A94;
+		display: block;
+	}
+	small {
+		font-size: 60%;
+		line-height: 80%;
+		display: block;
+	}
+	span {
+		font-size: 80%;
+		font-weight: normal;
+		line-height: 80%;
+		display: block;
+	}
+}
 
-/**
- * Contact Page
- */
+// ----------------------
+// Contact Page
+// ----------------------
+
 #contact-form {
 	margin-bottom: 30px;
 }
@@ -19,12 +62,24 @@
 	border: 1px solid $c-grey;
 	@include box-shadow(0, 0, 20px, rgba(0,0,0,0.2));
 	margin-bottom: 20px;
-	margin-top: 60px;
 }
 
-.contact-us {
+.map-container {
 	address {
 		color: $c-text;
-		font-size: 15px;
+		font-size: 16px;
+	}
+}
+
+.call-us-on {
+	font-size: 18px;
+	margin-bottom: 20px;
+	strong {
+		font-size: 30px;
+		font-weight: 600;
+		display: inline-block;
+		color: $c-blue;
+		line-height: 36px;
+		margin-left: 10px;
 	}
 }

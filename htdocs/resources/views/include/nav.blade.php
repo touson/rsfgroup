@@ -25,7 +25,7 @@
 				</ul>
 			</li>
 			<li class="parent">
-				<a href="/boilers">Boilers</a>
+				<a href="/electrical">Electrical</a>
 				<ul>
 					<li><a href="#">1</a></li>
 					<li><a href="#">2</a></li>

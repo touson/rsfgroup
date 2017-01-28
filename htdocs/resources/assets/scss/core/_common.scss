@@ -91,6 +91,12 @@ ul.arrow {
 	}
 }
 
+ul.columns {
+	li {
+		width: 100%;
+		padding: 5px 0;
+	}
+}
 
 /* ============================================ *
  * Typography
@@ -165,13 +171,52 @@ ul.arrow {
  	background: $c-red;
  }
 
-.call-us-on {
-	strong {
-		font-size: 26px;
-		font-weight: 600;
-		display: block;
-		margin-bottom: 20px;
-		color: $c-blue;
-		line-height: 36px;
+// =========================
+//  Extra Small Breakpoint
+// =========================
+@include bp(min-width, $bp-xsmall + 1) {
+
+}
+
+// =========================
+//  Small Breakpoint
+// =========================
+@include bp(min-width, $bp-small + 1) {
+	ul.columns {
+		li {
+			display: inline-block;
+			width: 48%;
+		}
+	}
+}
+
+// =========================
+//  Medium Breakpoint
+// =========================
+@include bp(min-width, $bp-medium + 1) {
+
+}
+
+// =========================
+//  Large Breakpoint
+// =========================
+@include bp(min-width, $bp-large + 1) {
+	ul.columns {
+		li {
+			display: inline-block;
+			width: 32%;
+		}
+	}
+}
+
+// =========================
+//  Extra Large Breakpoint
+// =========================
+@include bp(min-width, $bp-xlarge + 1) {
+	ul.columns {
+		li {
+			display: inline-block;
+			width: 24%;
+		}
 	}
 }
