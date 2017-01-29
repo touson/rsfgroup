@@ -18,6 +18,12 @@ header {
 		font-weight: 100;
 		color: $c-white;
 		line-height: 1.4;
+		a {
+			color: $c-white;
+			&:hover {
+				color: $c-grey;
+			}
+		}
 	}
 	.quote-button {
 		display: none;
@@ -32,6 +38,9 @@ nav {
 	width: 100%;
 	padding: 0 10px;
 	position: relative;
+	.house {
+		width: 16px;
+	}
 	.main-nav {
 		overflow: hidden;
 		max-height: 0;

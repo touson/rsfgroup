@@ -8,9 +8,6 @@
 @import "compass/css3/transition";
 @import "compass/css3/columns";
 
-// ----------------------------------------------
-// Set up
-
 @import "var";
 
 // ----------------------------------------------
@@ -23,20 +20,16 @@
 @import "mixin/button";
 
 // ----------------------------------------------
+// Set up
+
+@import "core/reset";
+@import "core/base";
+
+// ----------------------------------------------
 // icons
 
 @import "content/icons";
 @import "content/grid";
-
-// ----------------------------------------------
-// Core
-
-@import "core/reset";
-@import "core/base";
-@import "core/buttons";
-@import "core/form";
-@import "core/table";
-@import "core/common";
 
 // ----------------------------------------------
 // Layout
@@ -44,6 +37,15 @@
 @import "layout/global";
 @import "layout/header";
 @import "layout/footer";
+
+// ----------------------------------------------
+// Core
+
+@import "core/buttons";
+@import "core/form";
+@import "core/table";
+@import "core/common";
+
 
 // ----------------------------------------------
 // Content

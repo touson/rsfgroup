@@ -1,3 +1,82 @@
+<div class="full-width b-lgrey qualified-engineers-promo">
+	<div class="container">
+		<div class="col-set">
+			<div class="col-2">
+				<p>All our engineers are fully qualified and work to the highest standards to ensure your work is carried out quickly and reliably.</p>
+				<div class="accreditations">
+					<div class="accreditation">
+						<img src="images/accreditations/nic-eic.jpg" alt="">
+					</div>
+					<div class="accreditation">
+						<img src="images/accreditations/iphe.jpg" alt="">
+					</div>
+					<div class="accreditation">
+						<img src="images/accreditations/city-and-guilds.jpg" alt="">
+					</div>
+					<div class="accreditation">
+						<img src="images/accreditations/gas-safe.jpg" alt="">
+					</div>
+					<div class="accreditation">
+						<img src="images/accreditations/corgi.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="col-2">
+				<img src="images/general/hp-heating-engineer.jpg" alt="All RSF Group engineers are fully qualified">
+				<h4>Call us today on <strong>01708 444 355</strong></h4>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section>
+	<div class="container">
+		<h3>Some of the boiler brands we work with</h3>
+		<div class="boiler-brands">
+			<div class="brand-container">
+				<div class="cell">
+					<img src="images/boiler-brands/worcester.jpg" alt="Worcester">
+				</div>
+			</div>
+			<div class="brand-container">
+				<div class="cell">
+					<img src="images/boiler-brands/vokera.jpg" alt="Vokera">
+				</div>
+			</div>
+			<div class="brand-container">
+				<div class="cell">
+					<img src="images/boiler-brands/viesmann.jpg" alt="Viemann">
+				</div>
+			</div>
+			<div class="brand-container">
+				<div class="cell">
+					<img src="images/boiler-brands/vaillant.jpg" alt="Vaillant">
+				</div>
+			</div>
+			<div class="brand-container">
+				<div class="cell">
+					<img src="images/boiler-brands/potterton.jpg" alt="Potterton">
+				</div>
+			</div>
+			<div class="brand-container">
+				<div class="cell">
+					<img src="images/boiler-brands/glow-worm.jpg" alt="Glow Worm">
+				</div>
+			</div>
+			<div class="brand-container">
+				<div class="cell">
+					<img src="images/boiler-brands/baxi.jpg" alt="Essex and suffolk water">
+				</div>
+			</div>
+			<div class="brand-container">
+				<div class="cell">
+					<img src="images/boiler-brands/worcester.jpg" alt="Baxi">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <footer>
 	<div class="client-logos">
 		<div class="container">
@@ -35,35 +114,34 @@
 	</div>
 	<div class="footer-container">
 		<div class="footer-block">
-			<h4>Commercial</h4>
+			<h4>Superior Service</h4>
 			<ul class="arrow orange">
-				<li><a href="#">Electrical services</a></li>
-				<li><a href="#">Air Conditioning Maintenance</a></li>
-				<li><a href="#">Commercial Gas</a></li>
-				<li><a href="#">Plumbing</a></li>
-				<li><a href="#">Mobile engineers</a></li>
-				<li><a href="#">24/7 availability</a></li>
-				<li><a href="/areas-covered">Areas covered</a></li>
-				<li><a href="#">Case studies</a></li>
+				<li><a href="/electrical">Electrical Services</a></li>
+				<li><a href="/electrical">Air Conditioning Maintenance</a></li>
+				<li><a href="/commercial">Commercial Gas</a></li>
+				<li><a href="/plumbing">Plumbing</a></li>
+				<li><a href="/about-us">Mobile Engineers</a></li>
+				<li><a href="/about-us">24/7 Availability</a></li>
+				<li><a href="/areas-covered">Areas Covered</a></li>
 			</ul>
 		</div>
 		<div class="footer-block">
-			<h4>Domestic</h4>
+			<h4>Services</h4>
 			<ul class="arrow yellow">
 				<li><a href="/heating">Heating</a></li>
-				<li><a href="/gas">Gas</a></li>
-				<li><a href="#">Electrics</a></li>
+				<li><a href="/electrical">Electrical</a></li>
 				<li><a href="/plumbing">Plumbing</a></li>
-				<li><a href="#">24/7 availability</a></li>
+				<li><a href="/commercial">Commercial</a></li>
 			</ul>
 		</div>
 		<div class="footer-block">
 			<h4>Company</h4>
 			<ul class="arrow bblue">
 				<li><a href="/">Home</a></li>
-				<li><a href="/about-us">About us</a></li>
+				<li><a href="/about-us">About Us</a></li>
 				<li><a href="/contact-us">Contact Us</a></li>
 				<li><a href="/guarantees">Guarantees</a></li>
+				<li><a href="/areas-covered">Areas Covered</a></li>
 			</ul>
 		</div>
 		<div class="contact-block">

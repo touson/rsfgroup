@@ -1,22 +1,5 @@
 
-// ------------------------------
-// Common page header graphic
-// ------------------------------
-.page-header {
-	position: relative;
-	margin-bottom: 30px;
-	border-bottom: 8px solid $c-blue;
-	h1 {
-		background: rgba(0, 0, 0, 0.7);
-		padding: 25px 50px 25px 130px;
-		color: #ffffff;
-		font-size: 40px;
-		position: absolute;
-		left: 0;
-		top: 60%;
-		font-weight: 100;
-	}
-}
+
 
 .timeslot {
 	span {

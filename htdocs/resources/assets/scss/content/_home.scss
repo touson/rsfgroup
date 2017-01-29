@@ -31,7 +31,7 @@
 }
 
 #slide-selector {
-	border-top: 4px solid $c-blue;
+	border-top: 6px solid $c-blue;
 	margin-bottom: 20px;
 	font-size: 0;
 	display: table;
@@ -45,6 +45,7 @@
 		background: $c-lgrey;
 		padding: 10px;
 		text-align: center;
+		position: relative;
 		&.active,
 		&:hover {
 			background: $c-blue;
