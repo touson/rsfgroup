@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="page-header container">
-	<img src="/images/banners/boilers.jpg" alt="" />
+	<img src="/images/banners/electrical-pictures.jpg" alt="" />
 	<h1>Electrical</h1>
 </div>
 

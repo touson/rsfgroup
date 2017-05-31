@@ -1346,15 +1346,9 @@ h6, .h6 {
   bottom: -28px;
   font-weight: 100;
 }
-.page-header img {
-  display: block;
-  max-width: 1000px;
-  max-height: 150px;
-  width: auto;
-  height: auto;
-  transform: translateX(-50%);
-  left: 50%;
-  position: relative;
+
+.areas-covered .page-header {
+  height: 350px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -1365,19 +1359,16 @@ h6, .h6 {
 }
 @media only screen and (min-width: 768px) {
   .page-header {
-    position: relative;
-    margin-bottom: 30px;
-    border-bottom: 8px solid #0E5A94;
+    margin: 0 auto 30px;
+    padding-bottom: 0;
   }
   .page-header h1 {
     background: rgba(0, 0, 0, 0.7);
     padding: 25px 50px 25px 130px;
-    color: #ffffff;
     font-size: 40px;
-    position: absolute;
-    left: 0;
     top: 60%;
-    font-weight: 100;
+    bottom: auto;
+    width: auto;
   }
 }
 @media only screen and (min-width: 960px) {

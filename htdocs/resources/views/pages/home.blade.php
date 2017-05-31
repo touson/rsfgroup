@@ -79,6 +79,85 @@
 
 <section>
 	<div class="container">
+		<h3>Some of the boiler brands we work with</h3>
+		<div class="boiler-brands">
+			<div class="brand-container">
+				<div class="cell">
+					<img src="images/boiler-brands/worcester.jpg" alt="Worcester">
+				</div>
+			</div>
+			<div class="brand-container">
+				<div class="cell">
+					<img src="images/boiler-brands/vokera.jpg" alt="Vokera">
+				</div>
+			</div>
+			<div class="brand-container">
+				<div class="cell">
+					<img src="images/boiler-brands/viesmann.jpg" alt="Viemann">
+				</div>
+			</div>
+			<div class="brand-container">
+				<div class="cell">
+					<img src="images/boiler-brands/vaillant.jpg" alt="Vaillant">
+				</div>
+			</div>
+			<div class="brand-container">
+				<div class="cell">
+					<img src="images/boiler-brands/potterton.jpg" alt="Potterton">
+				</div>
+			</div>
+			<div class="brand-container">
+				<div class="cell">
+					<img src="images/boiler-brands/glow-worm.jpg" alt="Glow Worm">
+				</div>
+			</div>
+			<div class="brand-container">
+				<div class="cell">
+					<img src="images/boiler-brands/baxi.jpg" alt="Essex and suffolk water">
+				</div>
+			</div>
+			<div class="brand-container">
+				<div class="cell">
+					<img src="images/boiler-brands/worcester.jpg" alt="Baxi">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="full-width b-lgrey qualified-engineers-promo">
+	<div class="container">
+		<div class="col-set">
+			<div class="col-2">
+				<p>All our engineers are fully qualified and work to the highest standards to ensure your work is carried out quickly and reliably.</p>
+				<div class="accreditations">
+					<div class="accreditation">
+						<img src="images/accreditations/nic-eic.jpg" alt="">
+					</div>
+					<div class="accreditation">
+						<img src="images/accreditations/iphe.jpg" alt="">
+					</div>
+					<div class="accreditation">
+						<img src="images/accreditations/city-and-guilds.jpg" alt="">
+					</div>
+					<div class="accreditation">
+						<img src="images/accreditations/gas-safe.jpg" alt="">
+					</div>
+					<div class="accreditation">
+						<img src="images/accreditations/corgi.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="col-2">
+				<img src="images/general/hp-heating-engineer.jpg" alt="All RSF Group engineers are fully qualified">
+				<h4>Call us today on <strong>01708 444 355</strong></h4>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section>
+	<div class="container">
 		<div class="testimonials">
 			<h3>Customer Testimonials</h3>
 			<div class="testimonial">

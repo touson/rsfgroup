@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="page-header container">
-	<img src="/images/banners/contact-us.jpg" alt="" />
+	<img src="/images/banners/contact-picture.jpg" alt="" />
 	<h1>Contact Us</h1>
 </div>
 
@@ -34,7 +34,7 @@
 			<div class="col-2 map-container">
 				<p class="call-us-on">Call us today on <strong>01708 444 355</strong></p>
 				<div id="contact-map"></div>
-				<address><strong>RSF Group</strong> - Concept House, 23 Billet Lane, Hornchurch, Essex, RM11 1XP</address>
+				<address><strong>RSF Group</strong> - 9-11 Butts Breen Road, Hornchurch, Essex, RM11 2JR</address>
 			</div>
 		</div>
 	</div>

@@ -52,13 +52,20 @@
 	"buffers":
 	[
 		{
-			"file": "/Users/touson/Docs/Work/RSF/rsfgroup.co.uk/TO DO.txt",
+			"file": "htdocs/resources/views/pages/contact.blade.php",
 			"settings":
 			{
-				"buffer_size": 364,
+				"buffer_size": 1986,
 				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "ADDITIONS"
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "htdocs/resources/views/include/footer.blade.php",
+			"settings":
+			{
+				"buffer_size": 5309,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -69,17 +76,17 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "gist",
+		"height": 189.0,
+		"last_filter": "wrap",
 		"selected_items":
 		[
 			[
-				"gist",
-				"Gist: Insert Gist"
-			],
-			[
 				"wrap",
 				"Word Wrap: Toggle"
+			],
+			[
+				"gist",
+				"Gist: Insert Gist"
 			],
 			[
 				"synhtm",
@@ -162,7 +169,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 521.0
+		"width": 575.0
 	},
 	"console":
 	{
@@ -186,49 +193,73 @@
 		"/Users/touson/Sites/rsfgroup.co.uk",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/public",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/public/images",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/content",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/core",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/layout",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/mixin",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/pages"
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/include",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/pages",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/partials"
 	],
 	"file_history":
 	[
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/public/.htaccess",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/.env",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/server.php",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/public/index.php",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/layout/_header.scss",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/include/homepage-footer.blade.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/pages/home.blade.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/include/footer.blade.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/master.blade.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/pages/plumbing.blade.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/pages/heating.blade.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/pages/boilers.blade.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/pages/electrical.blade.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/pages/about.blade.php",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/pages/contact.blade.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/layout/_header.scss",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/include/nav.blade.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/content/_pages.scss",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/core/_common.scss",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/pages/areas.blade.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/include/header.blade.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/styles.scss",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/content/_grid.scss",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/layout/_global.scss",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/layout/_footer.scss",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/pages/commercial.blade.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/partials/telephone-block.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/public/index.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/content/_home.scss",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/content/_icons.scss",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/public/.htaccess",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/public/images/general/house.svg",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/server.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/routes/web.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/.env",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/core/_form.scss",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/core/_buttons.scss",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/mixin/_button.scss",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/_var.scss",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/core/_table.scss",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/js/app.js",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/pages/guarantees.blade.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/Users/touson/Docs/Work/RSF/rsfgroup.co.uk/TO DO.txt",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/routes/api.php",
+		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/routes/console.php",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/mixin/_helpers.scss",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/public/test.php",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/public/info.php",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/readme.md",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/routes/console.php",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/routes/api.php",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/routes/web.php",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/pages/home.blade.php",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/content/_testimonials.scss",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/content/_home.scss",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/js/app.js",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/.htaccess",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/gulpfile.js",
 		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/User/Gist.sublime-settings",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/include/footer.blade.php",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/layout/_footer.scss",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Constraints/IsChecked.php",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/core/_common.scss",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/content/_grid.scss",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/public/js/all.js",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/node_modules/glob/common.js",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/public/css/styles.css",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/include/header.blade.php",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/include/nav.blade.php",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/_var.scss",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/styles.scss",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/mixin/_star.scss",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss/config.rb",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/sass/core/_common.scss",
@@ -252,7 +283,6 @@
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/js/jquery.bxslider.js",
 		"/Users/touson/Downloads/jquery.bxslider/jquery.bxslider.js",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/sass/config.rb",
-		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/views/master.blade.php",
 		"/Users/touson/Downloads/jquery.bxslider/jquery.bxslider.css",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/js/components/Example.vue",
 		"/Users/touson/Sites/rsfgroup.co.uk/htdocs/public/images/general/logo.png",
@@ -304,26 +334,7 @@
 		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/template-parts/content-single.php",
 		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/layout/_header.scss",
 		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/template-parts/content-none.php",
-		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/layout/_footer.scss",
-		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/js/core.js",
-		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/general/_pages.scss",
-		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/productions/templates/cast_image_metabox.php",
-		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/page-templates/production.php",
-		"/Users/touson/Downloads/custom-post-type-image-upload/custom-post-type-image-upload.php",
-		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/general/_production.scss",
-		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/style.css",
-		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/productions/templates/secondary_cast_metabox.php",
-		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/productions/post-types/secondary_cast.php",
-		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/template-parts/content-production.php",
-		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/User/snippets/echopre.sublime-snippet",
-		"/Users/touson/Sites/basop/htdocs/wp-content/plugins/index.php",
-		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/User/snippets/echopre",
-		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/User/Xdebug.sublime-settings",
-		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/Xdebug Client/Xdebug.sublime-settings",
-		"/Users/touson/Sites/basop/htdocs/.htaccess",
-		"/Users/touson/Sites/basop/.gitignore",
-		"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop/scss/core/_common.scss"
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
 	],
 	"find":
 	{
@@ -334,6 +345,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/scss",
 			"/Users/touson/Sites/rsfgroup.co.uk/htdocs/resources/assets/sass",
 			"/Users/touson/Sites/basop/htdocs/wp-content/themes/basop",
 			"/Users/touson/Sites/basop/htdocs/wp-content/plugins/productions",
@@ -352,6 +364,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"{.*?(\\d*\\.\\d*).*?(\\d*\\.\\d*)},?\\n?",
+			"{",
+			",(?!\\n)",
+			"new google.maps.LatLng(",
+			"–",
+			"col-1",
+			"•\t",
+			"$line-height",
+			"140%",
+			"=>'",
+			"<br />",
+			"•\t",
+			"<th>",
+			"&",
+			"•\t",
+			"&",
+			"•\t",
 			"$j",
 			"star",
 			"ceil",
@@ -462,31 +491,17 @@
 			"name",
 			"helper",
 			"libr",
-			"form-con",
-			"form",
-			"enquiry",
-			"from",
-			"ins-intro",
-			"body",
-			"IMG;?>/products/",
-			"mfp-fade",
-			"&",
-			"rsficon",
-			";\n",
-			"rsficon",
-			"#product-design",
-			"#hp-big-tap",
-			"#hp-intro",
-			"hp",
-			"p-intro",
-			"position_intro_block"
+			"form-con"
 		],
 		"highlight": true,
-		"in_selection": false,
+		"in_selection": true,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"{lat: $1, lng: $2},\\n",
+			"{lng: ",
+			", lat: ",
 			"<li><span class=\"year\">$1</span> ",
 			" ",
 			"'touson.co.uk'",
@@ -511,35 +526,49 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/touson/Docs/Work/RSF/rsfgroup.co.uk/TO DO.txt",
+					"file": "htdocs/resources/views/pages/contact.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 364,
+						"buffer_size": 1986,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								193,
-								193
+								1323,
+								1373
 							]
 						],
 						"settings":
 						{
-							"auto_name": "ADDITIONS",
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
 							{
 								"close":
 								{
+									"1":
+									[
+										1375,
+										1382
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"brackethighlighter.default"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										1286,
+										1293
+									]
 								},
 								"unmatched":
 								{
@@ -547,69 +576,186 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content"
 							],
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "htdocs/resources/views/include/footer.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5309,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1067,
+										1070
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1,
+										4
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2281.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -662,7 +808,7 @@
 	"project": "rsfgroup.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -671,6 +817,62 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"boileblad",
+				"htdocs/resources/views/pages/boilers.blade.php"
+			],
+			[
+				"navblade",
+				"htdocs/resources/views/include/nav.blade.php"
+			],
+			[
+				"headblade",
+				"htdocs/resources/views/include/header.blade.php"
+			],
+			[
+				"contblad",
+				"htdocs/resources/views/pages/contact.blade.php"
+			],
+			[
+				"aboutblad",
+				"htdocs/resources/views/pages/about.blade.php"
+			],
+			[
+				"areasblad",
+				"htdocs/resources/views/pages/areas.blade.php"
+			],
+			[
+				"footblad",
+				"htdocs/resources/views/include/footer.blade.php"
+			],
+			[
+				"heatbl",
+				"htdocs/resources/views/pages/heating.blade.php"
+			],
+			[
+				"plumblade",
+				"htdocs/resources/views/pages/plumbing.blade.php"
+			],
+			[
+				"heatblad",
+				"htdocs/resources/views/pages/heating.blade.php"
+			],
+			[
+				"gridscs",
+				"htdocs/resources/assets/scss/content/_grid.scss"
+			],
+			[
+				"appjs",
+				"htdocs/resources/assets/js/app.js"
+			],
+			[
+				"navblad",
+				"htdocs/resources/views/include/nav.blade.php"
+			],
+			[
+				"headblad",
+				"htdocs/resources/views/include/header.blade.php"
+			],
 			[
 				"homblad",
 				"htdocs/resources/views/pages/home.blade.php"
@@ -748,10 +950,6 @@
 				"htdocs/resources/assets/sass/mixin/_typography.scss"
 			],
 			[
-				"navblade",
-				"htdocs/resources/views/include/nav.blade.php"
-			],
-			[
 				"headerblade",
 				"htdocs/resources/views/include/header.blade.php"
 			],
@@ -788,10 +986,6 @@
 				"htdocs/resources/assets/sass/_var.scss"
 			],
 			[
-				"gridscs",
-				"htdocs/resources/assets/sass/content/_grid.scss"
-			],
-			[
 				"mastblad",
 				"htdocs/resources/views/master.blade.php"
 			],
@@ -802,10 +996,6 @@
 			[
 				"mixtri",
 				"htdocs/resources/assets/sass/mixin/_triangle.scss"
-			],
-			[
-				"navblad",
-				"htdocs/resources/views/include/nav.blade.php"
 			],
 			[
 				"headscs",
@@ -945,9 +1135,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "basop",
 		"selected_items":
 		[
+			[
+				"basop",
+				"~/Sites/basop/basop.sublime-project"
+			],
 			[
 				"lap",
 				"~/Sites/laplandletters.com/lapland.sublime-project"

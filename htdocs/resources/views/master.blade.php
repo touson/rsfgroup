@@ -26,7 +26,12 @@
 		<div class="main-container">
 			@yield('content')
 		</div>
-		@include('include.footer')
+
+		@if (Request::is('/'))
+			@include('include.homepage-footer')
+		@else
+			@include('include.footer')
+		@endif
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script src="/js/all.js"></script>
