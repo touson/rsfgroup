@@ -132,24 +132,27 @@
 				<p>All our engineers are fully qualified and work to the highest standards to ensure your work is carried out quickly and reliably.</p>
 				<div class="accreditations">
 					<div class="accreditation">
-						<img src="images/accreditations/nic-eic.jpg" alt="">
+						<img src="images/accreditations/nic-eic.png" alt="">
 					</div>
 					<div class="accreditation">
-						<img src="images/accreditations/iphe.jpg" alt="">
+						<img src="images/accreditations/iphe.png" alt="">
 					</div>
 					<div class="accreditation">
-						<img src="images/accreditations/city-and-guilds.jpg" alt="">
+						<img src="images/accreditations/city-and-guilds.png" alt="">
 					</div>
 					<div class="accreditation">
-						<img src="images/accreditations/gas-safe.jpg" alt="">
+						<img src="images/accreditations/gas-safe.png" alt="">
 					</div>
 					<div class="accreditation">
-						<img src="images/accreditations/corgi.jpg" alt="">
+						<img src="images/accreditations/corgi.png" alt="">
+					</div>
+					<div class="accreditation">
+						<img src="images/accreditations/which.png" alt="">
 					</div>
 				</div>
 			</div>
 			<div class="col-2">
-				<img src="images/general/hp-heating-engineer.jpg" alt="All RSF Group engineers are fully qualified">
+				<img src="images/general/andy.jpg" alt="All RSF Group engineers are fully qualified">
 				<h4>Call us today on <strong>01708 444 355</strong></h4>
 			</div>
 		</div>
