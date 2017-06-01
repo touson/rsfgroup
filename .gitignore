@@ -2,6 +2,7 @@ vendor/
 node_modules/
 
 htdocs/public/css/styles*
+htdocs/public/css/print*
 
 # Laravel 4 specific
 bootstrap/compiled.php
