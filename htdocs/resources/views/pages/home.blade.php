@@ -4,6 +4,15 @@
 <div class="container full">
 	<div id="hp-slider">
 		<div class="slide">
+			<img src="images/slideshow/smiling-plumber.jpg" alt="Certified Plumbers">
+			<div class="title">
+				<div class="primary">Certified Plumbers</div>
+				<div class="secondary">
+					<div>All our engineers are fully qualified and work to the highest standards.</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
 			<img src="images/slideshow/customer-signing.jpg" alt="Boiler Servicing">
 			<div class="title">
 				<div class="primary">Boiler Servicing</div>
@@ -22,15 +31,6 @@
 			</div>
 		</div>
 		<div class="slide">
-			<img src="images/slideshow/smiling-plumber.jpg" alt="Certified Plumbers">
-			<div class="title">
-				<div class="primary">Certified Plumbers</div>
-				<div class="secondary">
-					<div>All our engineers are fully qualified and work to the highest standards.</div>
-				</div>
-			</div>
-		</div>
-		<div class="slide">
 			<img src="images/slideshow/man-with-van.jpg" alt="Landlord Services">
 			<div class="title">
 				<div class="primary">Landlord Services</div>
@@ -41,9 +41,9 @@
 		</div>
 	</div>
 	<div id="slide-selector">
-		<a data-slide-index="0">Boiler Servicing<span></span></a>
-		<a data-slide-index="1">Emergency boiler repairs<span></span></a>
-		<a data-slide-index="2">Certified Plumbers<span></span></a>
+		<a data-slide-index="0">Certified Plumbers<span></span></a>
+		<a data-slide-index="1">Boiler Servicing<span></span></a>
+		<a data-slide-index="2">Emergency boiler repairs<span></span></a>
 		<a data-slide-index="3">Landlord Services<span></span></a>
 	</div>
 </div>
