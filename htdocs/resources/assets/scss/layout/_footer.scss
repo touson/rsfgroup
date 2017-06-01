@@ -93,6 +93,13 @@ footer {
 	display: none;
 }
 
+.footer-lifestyle {
+	margin-bottom: 0;
+	.container {
+		padding: 0;
+	}
+}
+
 @include bp(min-width, $bp-xsmall + 1) {
 
 }
