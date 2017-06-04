@@ -150,11 +150,10 @@
 		<div class="contact-block">
 			<h4>Contact Us Today</h4>
 			<address>
-				Concept House<br/>
-				23 Billet Lane<br/>
+				9-11 Butts Green Road<br/>
 				Hornchurch<br/>
 				Essex<br/>
-				RM11 1XP
+				RM11 2JR
 			</address>
 			<ul class="contact-details">
 				<li><strong>T</strong>01708 444 355</li>
