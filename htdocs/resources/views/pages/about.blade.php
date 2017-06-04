@@ -9,24 +9,24 @@
 <section>
 	<div class="container">
 		<div class="col-set">
-			<div class="col-2">
-				<h4>Your peace of mind is foremost in our minds</h4>
-				<p>From the moment you call our Office Call Centre we will do our best to ensure that the experience you have will be one which builds confidence in us.</p>
+			<h2>Your peace of mind is foremost in our minds</h2>
+			<div class="col-3">
 				<p>When booking work with RSF Group your unique job reference number allows us to track and access all relevant information for your job at every stage on our system should you require it.</p>
-			</div>
-			<div class="col-2">
 				<p>80% of our work is from returning customers and our reputation has been built on the trust customers have that we will undertake the work, however small or large, with complete professionalism and to the highest standards</p>
+			</div>
+			<div class="col-3">
+				<p>From the moment you call our Office Call Centre we will do our best to ensure that the experience you have will be one which builds confidence in us.</p>
 				<p>Larger works will be supervised by one of our highly knowledgeable and experienced managers who will regularly update you and answer any of your queries.</p>
 				<p>Still a family run business we pride ourselves on that personal service which we believe is paramount to our success </p>
+			</div>
+			<div class="col-3">
+				<img src="/images/general/registered-andy.jpg" alt="">
 			</div>
 		</div>
 		<div class="col-set">
 			<div class="col-1">
 
 				<h2>Operatives</h2>
-
-				@include('partials.es-water-block')
-
 				<ul class="tick">
 					<li><strong>CRB</strong> - All our operatives are fully vetted by the Criminal Records Bureau (CRB).</li>
 					<li><strong>Company Identification</strong> - All our operatives are issued with a photo identification card stating their name.</li>
@@ -47,6 +47,9 @@
 				</ul>
 
 				<h2>Confidentiality</h2>
+
+				@include('partials.es-water-block')
+
 				<ul class="tick">
 					<li><strong>Customer Details</strong> - Under no circumstances will any customer's details be shared, sold or in way passed on to any third party.</li>
 					<li><strong>Security</strong> - Any keys left with our operatives to gain access to properly will be kept secure.</li>
