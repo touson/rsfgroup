@@ -8,9 +8,10 @@
 		<div class="col-set">
 			<div class="col-2">
 				<p>We are based in Rainham and cover London and Essex, however if you are further afield, please don't hesitate to get in touch as we may still be able to help you.</p>
+				@include('partials.telephone-block')
 			</div>
 			<div class="col-2">
-				@include('partials.telephone-block')
+				@include('partials.es-water-block')
 			</div>
 		</div>
 	</div>
