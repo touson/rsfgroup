@@ -24,6 +24,9 @@
 			<div class="col-1">
 
 				<h2>Operatives</h2>
+
+				@include('partials.es-water-block')
+
 				<ul class="tick">
 					<li><strong>CRB</strong> - All our operatives are fully vetted by the Criminal Records Bureau (CRB).</li>
 					<li><strong>Company Identification</strong> - All our operatives are issued with a photo identification card stating their name.</li>

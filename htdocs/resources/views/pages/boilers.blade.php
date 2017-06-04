@@ -13,6 +13,9 @@
 		<p>It is a complicated and expensive piece of machinery, which works by burning gas to heat up water, before feeding it into the central heating pipework.</p>
 
 		<h3>Finding the right boiler for your home</h3>
+
+		@include('partials.es-water-block')
+
 		<p>Get an online boiler quote, check out all the areas we're covering with local boiler service or read more about the different boiler types on this page.</p>
 		<p>By far the biggest seller and most popular type of boiler in today’s market is the combi boiler. A combi boiler heats water directly from the mains, allowing a constant supply of hot water and alleviating the need for a separate water tank.</p>
 		<p>They are one of the most efficient types of boiler as they will only heat water when it is needed.</p>

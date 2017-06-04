@@ -66,3 +66,28 @@
 		margin-left: 10px;
 	}
 }
+
+.essex-and-suffolk-water-panel {
+	padding: 10px 30px 20px 30px;
+	margin: 0 auto 30px auto;
+	max-width: 360px;
+	border: 1px solid darken($c-lgrey, 5%);
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+	h3 {
+		padding-bottom: 14px;
+	}
+	img {
+
+	}
+}
+
+// =========================
+//  Small Breakpoint
+// =========================
+@include bp(min-width, $bp-small + 1) {
+	.essex-and-suffolk-water-panel {
+		float: right;
+		margin: 0 0 30px 30px;
+		max-width: auto;
+	}
+}
