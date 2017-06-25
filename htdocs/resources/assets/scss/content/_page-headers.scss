@@ -1,0 +1,73 @@
+// ------------------------------
+// Common page header graphic
+// ------------------------------
+.page-header {
+	background-position: center center;
+	background-size: cover;
+	height: 230px;
+	width: 100%;
+	position: relative;
+	margin: 0 0 30px;
+	padding-bottom: 48px;
+	border-bottom: 8px solid $c-blue;
+	h1 {
+		background: darken($c-dgrey, 10%);
+		width: 100%;
+		text-align: center;
+		padding: 10px 20px;
+		color: #ffffff;
+		font-size: 20px;
+		position: absolute;
+		left: 0;
+		bottom: -28px;
+		font-weight: 100;
+	}
+	&.plumbing {
+		background-image: url(/images/banners/plumbing-picture.jpg);
+	}
+	&.heating {
+		background-image: url(/images/banners/heating-picture.jpg);
+	}
+	&.electrical {
+		background-image: url(/images/banners/electrical-pictures.jpg);
+	}
+	&.boilers {
+		background-image: url(/images/banners/boiler-picture.jpg);
+	}
+	&.about-us {
+		background-image: url(/images/banners/Vans1.jpg);
+	}
+	&.contact-us {
+		background-image: url(/images/banners/contact-picture.jpg);
+	}
+	&.commercial {
+		background-image: url(/images/banners/commercial.jpg);
+	}
+}
+
+// =========================
+//  Medium Breakpoint
+// =========================
+@include bp(min-width, $bp-medium + 1) {
+	.page-header {
+		height: 350px;
+		padding-bottom: 0;
+		h1 {
+			background: rgba(0, 0, 0, 0.7);
+			padding: 25px 50px 25px 130px;
+			font-size: 40px;
+			top: 60%;
+			bottom: auto;
+			width: auto;
+		}
+	}
+}
+
+// =========================
+//  Large Breakpoint
+// =========================
+@include bp(min-width, $bp-large + 1) {
+	.page-header {
+		height: 450px;
+	}
+}

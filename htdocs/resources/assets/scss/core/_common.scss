@@ -199,49 +199,10 @@ img {
  	background: $c-red;
  }
 
-// ------------------------------
-// Common page header graphic
-// ------------------------------
-.page-header {
-	position: relative;
-	margin: 0 0 30px;
-	padding-bottom: 48px;
-	border-bottom: 8px solid $c-blue;
-	h1 {
-		background: darken($c-dgrey, 10%);
-		width: 100%;
-		text-align: center;
-		padding: 10px 20px;
-		color: #ffffff;
-		font-size: 20px;
-		position: absolute;
-		left: 0;
-		bottom: -28px;
-		font-weight: 100;
-	}
-	// img {
-	// 	display: block;
-	// 	max-width: 1000px;
-	// 	max-height: 150px;
-	// 	width: auto;
-	// 	height: auto;
-	// 	transform: translateX(-50%);
-	// 	left: 50%;
-	// 	position: relative;
-	// }
-}
-
 .areas-covered {
 	.page-header {
 		height: 350px;
 	}
-}
-
-// =========================
-//  Extra Small Breakpoint
-// =========================
-@include bp(min-width, $bp-xsmall + 1) {
-
 }
 
 // =========================
@@ -253,30 +214,6 @@ img {
 			display: inline-block;
 			width: 48%;
 		}
-	}
-}
-
-// =========================
-//  Medium Breakpoint
-// =========================
-@include bp(min-width, $bp-medium + 1) {
-	.page-header {
-		margin: 0 auto 30px;
-		padding-bottom: 0;
-		h1 {
-			background: rgba(0, 0, 0, 0.7);
-			padding: 25px 50px 25px 130px;
-			font-size: 40px;
-			top: 60%;
-			bottom: auto;
-			width: auto;
-		}
-		// img {
-		// 	max-width: 100%;
-		// 	max-height: initial;
-		// 	transform: translateX(0);
-		// 	left: auto;
-		// }
 	}
 }
 

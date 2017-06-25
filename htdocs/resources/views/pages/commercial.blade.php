@@ -1,8 +1,7 @@
 @extends('master')
 
 @section('content')
-<div class="page-header container">
-	<img src="/images/banners/commercial.jpg" alt="" />
+<div class="page-header commercial">
 	<h1>Commercial</h1>
 </div>
 

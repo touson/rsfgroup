@@ -2,8 +2,7 @@
 
 @section('content')
 
-<div class="page-header container">
-	<img src="/images/banners/contact-picture.jpg" alt="" />
+<div class="page-header contact-us">
 	<h1>Contact Us</h1>
 </div>
 
