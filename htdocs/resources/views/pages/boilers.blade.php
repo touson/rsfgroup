@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="page-header boilers">
+	@include('include.es-water-approved')
 	<h1>Boilers</h1>
 </div>
 
@@ -13,7 +14,6 @@
 
 		<h3>Finding the right boiler for your home</h3>
 
-		@include('partials.es-water-block')
 
 		<p>Get an online boiler quote, check out all the areas we're covering with local boiler service or read more about the different boiler types on this page.</p>
 		<p>By far the biggest seller and most popular type of boiler in today’s market is the combi boiler. A combi boiler heats water directly from the mains, allowing a constant supply of hot water and alleviating the need for a separate water tank.</p>
@@ -54,6 +54,7 @@
 			<li>40kw+ – suitable for larger properties with more than 20 radiators</li>
 		</ul>
 
+
 		<h3>Popular boiler brands to look out for:</h3>
 		<ul>
 			<li>Vaillant</li>
@@ -70,6 +71,9 @@
 		<p>Unless you are upgrading your boiler, the chances are you are replacing an existing one because it is either broken or not functioning correctly.</p>
 		<p>Nevertheless, before you decide to swap your old boiler for a new one, it is worth getting a second opinion from a Gas Safe registered engineer, who will be able to check it for you and see if it can be repaired.</p>
 		<p>It may be the case that a simple remedy is at hand, and it may be possible that an inexpensive solution is available.</p>
+
+		@include('partials.es-water-block')
+
 		<p>If your boiler cannot be repaired, they will be able to recommend the best type of boiler to replace it with, taking into consideration the size of your home and budget.</p>
 		<p>You may also wish to replace your boiler if it is G-rated for energy efficiency, meaning it is wasting fuel and costing you more money on your heating bill.</p>
 		<p>Installing a new boiler can also add value to your property if you are looking to rent it out or sell it, and it will also have an effect on the EPC rating of your property.</p>

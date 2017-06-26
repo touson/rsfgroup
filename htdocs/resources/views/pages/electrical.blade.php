@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="page-header electrical">
+	@include('include.es-water-approved')
 	<h1>Electrical</h1>
 </div>
 

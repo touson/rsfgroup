@@ -43,6 +43,49 @@
 	&.commercial {
 		background-image: url(/images/banners/commercial.jpg);
 	}
+	&.prices {
+		background-image: url(/images/banners/boiler-picture-3.jpg);
+	}
+}
+
+#es-water-approved-block {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	width: 341px;
+	padding: 20px 20px 14px 20px;
+	text-align: left;
+	background: $c-white;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+	max-width: 87%;
+	h3 {
+		font-size: 16px;
+		margin: 0 0 8px;
+		border: none;
+		&:before,
+		&:after {
+			content: none;
+		}
+	}
+}
+
+// =========================
+//  Extra Small Breakpoint
+// =========================
+@include bp(min-width, $bp-xsmall + 1) {
+	#es-water-approved-block {
+		left: 30px;
+		h3 {
+			font-size: 20px;
+		}
+	}
+}
+
+// =========================
+//  Small Breakpoint
+// =========================
+@include bp(min-width, $bp-small + 1) {
+
 }
 
 // =========================
@@ -61,6 +104,9 @@
 			width: auto;
 		}
 	}
+	#es-water-approved-block {
+		top: 30px;
+	}
 }
 
 // =========================
@@ -68,6 +114,6 @@
 // =========================
 @include bp(min-width, $bp-large + 1) {
 	.page-header {
-		height: 450px;
+		height: 400px;
 	}
 }
