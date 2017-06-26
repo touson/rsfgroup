@@ -4,10 +4,13 @@ header {
 	padding: 20px 0 50px 0;
 	overflow: hidden;
 	.logo {
-		max-width: 160px;
 		display: block;
 		text-align: center;
 		margin: 0 auto 10px auto;
+		width: 220px;
+		img {
+			max-width: 160px;
+		}
 	}
 	.contact-info {
 		text-align: center;
@@ -31,6 +34,15 @@ header {
 	.quick-quote {
 		@include button-with-icon(light, 'I');
 	}
+}
+
+#strapline {
+	text-transform: uppercase;
+	color: $c-white;
+	font-weight: 100;
+	margin: 20px 0 0 0;
+	font-size: 14px;
+	text-align: center;
 }
 
 nav {
@@ -124,19 +136,20 @@ nav {
 }
 
 @include bp(min-width, $bp-small + 1) {
-
+	#strapline {
+		font-size: 17px;
+	}
 }
 
 @include bp(min-width, $bp-medium + 1) {
 	header {
 		padding: 30px;
 		.logo {
-			width: 150px;
 			display: inline-block;
 			vertical-align: middle;
 		}
 		.contact-info {
-			width: calc(100% - 390px);
+			width: calc(100% - 460px);
 			margin-right: 20px;
 		}
 		.quote-button {
@@ -194,11 +207,8 @@ nav {
 
 @include bp(min-width, $bp-large + 1) {
 	header {
-		.logo {
-			width: 200px;
-		}
 		.contact-info {
-			width: calc(100% - 420px);
+			width: calc(100% - 440px);
 			margin-right: 0;
 			text-align: right;
 		}
@@ -218,6 +228,10 @@ nav {
 			}
 		}
 	}
+	#strapline {
+		font-size: 22px;
+		margin-top: 10px;
+	}
 }
 
 @include bp(min-width, $bp-xlarge + 1) {
@@ -225,5 +239,10 @@ nav {
 		.container {
 			margin: 0 auto;
 		}
+	}
+	#strapline {
+		font-size: 17px;
+		float: right;
+		letter-spacing: 2px;
 	}
 }

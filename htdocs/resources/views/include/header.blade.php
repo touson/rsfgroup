@@ -14,6 +14,7 @@
 		<div class="quote-button">
 			<a href="/contact-us" class="quick-quote">Quick Quote</a>
 		</div>
+		<p id="strapline">London and Essex premier heating and plumbing company</p>
 	</div>
 </header>
 
