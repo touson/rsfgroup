@@ -38,6 +38,9 @@ Route::get('commercial', function () {
 Route::get('about-us', function () {
     return view('pages.about', ['page' => 'about-us']);
 });
+Route::get('prices', function () {
+    return view('pages.prices', ['page' => 'prices']);
+});
 Route::get('/', function () {
     return view('pages.home', ['page' => 'home']);
 });
