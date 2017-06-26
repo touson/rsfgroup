@@ -47,27 +47,17 @@
 	 	});
 	 }
 
-	/**
-	 * delayed-resize event trigger
-	 * ----------------------------
-	 * Fires the window 'delayed-resize' event 150ms after the window has been resized
-	 */
-	 var resizeTimer;
-	 $(window).resize(function (e) {
-	 	clearTimeout(resizeTimer);
-	 	resizeTimer = setTimeout(function () {
-	 		$(window).trigger('delayed-resize', e);
-	 	}, 150);
-	 	repositionTestimonials();
-	 });
-	});
+});
 
-// Set the homepage panel H2 tags to be of equal heights when window is resized.
-$(window).on('delayed-resize', function() {
+$(window).on('resize', function() {
+	// Set the homepage panel H2 tags to be of equal heights when window is resized.
 	$('.hp-panels h2').equalHeights();
+	// Reposition page-header elements
+	pageHeaderPadding();
 });
 
 $(document).ready(function(){
+	// Initialize homepage carousel
 	hpCarousel = $('#hp-slider').bxSlider({
 		mode: 'fade',
 		speed: 500,
@@ -78,26 +68,53 @@ $(document).ready(function(){
 		controls: false,
 		autoHover: true
 	});
+	// Activate mobile nav trigger
 	$('#ellipse').click(function(){
 		$('.main-nav').toggleClass('active');
 	});
+	// Animate main nav
 	$('.main-nav .parent')
-		.mouseenter(function(e){
-			var $elem = $(this);
-			var active = $elem.hasClass('active');
-			$('.main-nav .parent').removeClass('active');
-			if(!active) {
-				$elem.addClass('active');
-			}
-		})
-		.mouseleave(function(){
-			$('.main-nav .parent').removeClass('active');
-		});
+	.mouseenter(function(e){
+		var $elem = $(this);
+		var active = $elem.hasClass('active');
+		$('.main-nav .parent').removeClass('active');
+		if(!active) {
+			$elem.addClass('active');
+		}
+	})
+	.mouseleave(function(){
+		$('.main-nav .parent').removeClass('active');
+	});
 
-	$(window).trigger('delayed-resize');
-
+	// Trigger the layout functions
 	repositionTestimonials();
+	pageHeaderPadding();
 });
+
+// Global vars used by the pageHeaderPadding function.
+// We set them here so they only get set once on page load.
+var $es = $('#es-water-approved-block');
+var $headerTitle = $('.page-header h1');
+
+/**
+ * Page Header Padding
+ * -------------------
+ * Repositions the essex approved block and the page title in the page-header
+ * div when the viewport is over 1200px
+ */
+var pageHeaderPadding = function(){
+	var viewPortWidth = $('body').innerWidth();
+	if(viewPortWidth > 1200) {
+		var pos = (viewPortWidth - 1200) / 2 + 20;
+		$es.css('left', pos);
+		$headerTitle.css('padding-left', pos);
+	} else if(viewPortWidth < 768) {
+		$headerTitle.css('padding-left', 0);
+	} else {
+		$es.css('left', 30);
+		$headerTitle.css('padding-left', 130);
+	}
+}
 
 /**
  * Reposition Testimonials
