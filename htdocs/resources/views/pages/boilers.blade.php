@@ -8,6 +8,12 @@
 
 <section>
 	<div class="container">
+
+		<div id="boiler-change">
+			<h3>Combination Boilers Changed</h3>
+			<p>from <strong>£1495.00</strong> plus vat <span>with warranty</span></p>
+		</div>
+
 		<h3>New boiler: What to consider before buying</h3>
 		<p>A boiler is the heart of a home’s central heating system, supplying heat to the radiators and hot water to the taps.</p>
 		<p>It is a complicated and expensive piece of machinery, which works by burning gas to heat up water, before feeding it into the central heating pipework.</p>

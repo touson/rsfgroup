@@ -81,6 +81,31 @@
 	}
 }
 
+#boiler-change {
+	float: right;
+	background: $c-white;
+	z-index: 10;
+	position: relative;
+	padding: 10px 30px 20px 30px;
+	margin: 0 0 20px 20px;
+	border: 1px solid darken($c-lgrey, 5%);
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+	h3 {
+		font-size: 24px;
+	}
+	p {
+		font-size: 16px;
+		line-height: 26px;
+		margin: 0;
+		strong {
+			font-size: 200%;
+			color: $c-red;
+		}
+		span {
+			display: block;
+		}
+	}
+}
 // =========================
 //  Small Breakpoint
 // =========================
