@@ -11,6 +11,7 @@
 			<li><a href="/about-us">About Us</a></li>
 			<li><a href="/contact-us">Contact Us</a></li>
 			<li><a href="/commercial">Commercial</a></li>
+			<li><a href="/prices">Prices</a></li>
 		</ul>
 		<a data-icon="o" id="ellipse"></a>
 	</div>
