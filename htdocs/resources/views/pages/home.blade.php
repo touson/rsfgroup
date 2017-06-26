@@ -31,7 +31,7 @@
 			</div>
 		</div>
 		<div class="slide">
-			<img src="images/slideshow/man-with-van.jpg" alt="Landlord Services">
+			<img src="images/slideshow/vans.jpg" alt="Landlord Services">
 			<div class="title">
 				<div class="primary">Landlord Services</div>
 				<div class="secondary">
