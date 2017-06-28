@@ -89,6 +89,14 @@ $(document).ready(function(){
 	// Trigger the layout functions
 	repositionTestimonials();
 	pageHeaderPadding();
+
+	$('#prices h3').click(function(){
+		var alreadyOpen = $(this).hasClass('open');
+		$('#prices h3').removeClass('open');
+		if(!alreadyOpen) {
+			$(this).addClass('open');
+		}
+	});
 });
 
 // Global vars used by the pageHeaderPadding function.

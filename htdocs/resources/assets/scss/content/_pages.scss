@@ -1,4 +1,46 @@
-
+#prices {
+	.header {
+		h1 {
+			text-align: center;
+		}
+		h2 {
+			border: none;
+			text-align: center;
+			&:after {
+				content: none;
+			}
+		}
+	}
+	h3 {
+		&:before {
+			@include triangle('down', 14px, lighten($c-blue, 30%));
+			right: 0;
+			bottom: 4px;
+		}
+		&.open {
+			&:before {
+				@include triangle('left', 14px, $c-blue);
+			}
+			& + .leaf {
+				max-height: 500px;
+				padding-bottom: 20px;
+			}
+		}
+	}
+	.leaf {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.5s,
+					padding-bottom 0.5s;
+	}
+	table {
+		width: 100%;
+		margin-bottom: 0;
+		td {
+			width: 60px;
+		}
+	}
+}
 
 
 .timeslot {
