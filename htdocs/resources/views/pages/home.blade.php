@@ -146,130 +146,120 @@
 
 <section>
 	<div class="container">
-		<div class="testimonials">
+		<div class="col-set testimonials">
 			<h3>Customer Testimonials</h3>
-			<div class="testimonial">
-				<span class="open-quote"></span>
-				@include('partials.5-stars')
-				<div class="testimonial-content">
-					<div class="title">We can’t thank him or you enough!</div>
-					<div class="body">
-						<p>Thank you for the fast and professional service yesterday. This is our second appointment with your company and both have been positive. Your technician Jef was professional, courteous and went above and beyond our expectations. We can’t thank him or you enough! Harris Plumbing was quick to respond and we will gladly recommend you.</p>
-						<p class="person"><strong>Mrs Belkin</strong>Wembley</p>
-					</div>
-				</div>
-				<span class="close-quote"></span>
-			</div>
-			<div class="testimonial">
-				<span class="open-quote"></span>
-				@include('partials.5-stars')
-				<div class="testimonial-content">
-					<div class="testimonial-content">
-						<div class="title">These guys are very professional</div>
-						<div class="body">
-							<p>I want to express my gratitude towards the service of Harris Plumbing. These guys are very professional and take pride on the work that they do. I had Jef install a Navien tankless water heater for my home and was very pleased on the workmanship of the installation. He was very thorough and Jef’s main concern was to make sure the job was done right.</p>
-							<p>Since then I had a brand new sump pump installed and a few minor issues taken care of. They are a very courteous group of employees and I definitely made the right decision contacting them to do the work in my home.</p>
-							<p class="person"><strong>John Simmons</strong>Newbury</p>
-						</div>
-					</div>
-				<span class="close-quote"></span>
-				</div>
-			</div>
-			<div class="testimonial">
-				<span class="open-quote"></span>
-				@include('partials.5-stars')
-				<div class="testimonial-content">
+			<div class="col-2">
+				<div class="testimonial">
+					<span class="open-quote"></span>
+					@include('partials.5-stars')
 					<div class="testimonial-content">
 						<div class="title">We can’t thank him or you enough!</div>
 						<div class="body">
-							<p>Thank you for the fast and professional service yesterday. This is our second appointment with your company and both have been positive.</p>
-							<p class="person"><strong>Mrs Belkin</strong>Wembley</p>
+							<p>Thank you for the fast and professional service yesterday. This is our second appointment with your company and both have been positive. Your technician Ricky was professional, courteous and went above and beyond our expectations. We can’t thank him or you enough! RSF Group was quick to respond and we will gladly recommend you.</p>
+							<p class="person"><strong>Mrs Naylor</strong>Hornchurch</p>
 						</div>
 					</div>
+					<span class="close-quote"></span>
 				</div>
-				<span class="close-quote"></span>
-			</div>
-			<div class="testimonial">
-				<span class="open-quote"></span>
-				@include('partials.5-stars')
-				<div class="testimonial-content">
+				<div class="testimonial">
+					<span class="open-quote"></span>
+					@include('partials.5-stars')
 					<div class="testimonial-content">
-						<div class="title">These guys are very professional</div>
-						<div class="body">
-							<p>I want to express my gratitude towards the service of Harris Plumbing. These guys are very professional and take pride on the work that they do. I had Jef install a Navien tankless water heater for my home and was very pleased on the workmanship of the installation. He was very thorough and Jef’s main concern was to make sure the job was done right.</p>
-							<p>Since then I had a brand new sump pump installed and a few minor issues taken care of. They are a very courteous group of employees and I definitely made the right decision contacting them to do the work in my home.</p>
-							<p class="person"><strong>John Simmons</strong>Newbury</p>
+						<div class="testimonial-content">
+							<div class="title">Great job</div>
+							<div class="body">
+								<p>Great job, carried out a new installation for our heating system and bathroom, spoke to the company and they recommended we visit the bathroom showroom in Emerson Park in Hornchurch.worth the trip</p>
+								<p>Thanks for an excellent job, very clean and tidy - Dave and Lee</p>
+								<p class="person"><strong>Mr Jenkins</strong>Emerson Park – Hornchurch</p>
+							</div>
 						</div>
 					</div>
-				<span class="close-quote"></span>
+					<span class="close-quote"></span>
 				</div>
-			</div>
-			<div class="testimonial">
-				<span class="open-quote"></span>
-				@include('partials.5-stars')
-				<div class="testimonial-content">
+				<div class="testimonial">
+					<span class="open-quote"></span>
+					@include('partials.5-stars')
 					<div class="testimonial-content">
-						<div class="title">We can’t thank him or you enough!</div>
-						<div class="body">
-							<p>Thank you for the fast and professional service yesterday. This is our second appointment with your company and both have been positive.</p>
-							<p class="person"><strong>Mrs Belkin</strong>Wembley</p>
+						<div class="testimonial-content">
+							<div class="title">Very impressed with service from start to finish</div>
+							<div class="body">
+								<p>Boiler exchange for £1495.00- very impressed with service from start to finish. completed in one day as promised and with 7 year warranty – to many cups of tea though – thanks Danny</p>
+								<p class="person"><strong>Pete Jones</strong>Brentwood</p>
+							</div>
 						</div>
 					</div>
+					<span class="close-quote"></span>
 				</div>
-				<span class="close-quote"></span>
-			</div>
-			<div class="testimonial">
-				<span class="open-quote"></span>
-				@include('partials.5-stars')
-				<div class="testimonial-content">
-					<div class="title">We can’t thank him or you enough!</div>
-					<div class="body">
-						<p>Thank you for the fast and professional service yesterday. This is our second appointment with your company and both have been positive. Your technician Jef was professional, courteous and went above and beyond our expectations. We can’t thank him or you enough! Harris Plumbing was quick to respond and we will gladly recommend you.</p>
-						<p class="person"><strong>Mrs Belkin</strong>Wembley</p>
-					</div>
-				</div>
-				<span class="close-quote"></span>
-			</div>
-			<div class="testimonial">
-				<span class="open-quote"></span>
-				@include('partials.5-stars')
-				<div class="testimonial-content">
-					<div class="title">We can’t thank him or you enough!</div>
-					<div class="body">
-						<p>Thank you for the fast and professional service yesterday. This is our second appointment with your company and both have been positive. Your technician Jef was professional, courteous and went above and beyond our expectations. We can’t thank him or you enough! Harris Plumbing was quick to respond and we will gladly recommend you.</p>
-						<p class="person"><strong>Mrs Belkin</strong>Wembley</p>
-					</div>
-				</div>
-				<span class="close-quote"></span>
-			</div>
-			<div class="testimonial">
-				<span class="open-quote"></span>
-				@include('partials.5-stars')
-				<div class="testimonial-content">
+				<div class="testimonial">
+					<span class="open-quote"></span>
+					@include('partials.5-stars')
 					<div class="testimonial-content">
-						<div class="title">These guys are very professional</div>
+						<div class="title">We are over the moon</div>
 						<div class="body">
-							<p>I want to express my gratitude towards the service of Harris Plumbing. These guys are very professional and take pride on the work that they do. I had Jef install a Navien tankless water heater for my home and was very pleased on the workmanship of the installation. He was very thorough and Jef’s main concern was to make sure the job was done right.</p>
-							<p>Since then I had a brand new sump pump installed and a few minor issues taken care of. They are a very courteous group of employees and I definitely made the right decision contacting them to do the work in my home.</p>
-							<p class="person"><strong>John Simmons</strong>Newbury</p>
+							<p>Designed and installed my bathroom – wow– from entering there showroom they advised me of all the brands and i explained what i wanted out of my budget and they guided me through all the options, Andy the showroom manger was very helpful and showed me a CAD drawing of my bathroom and was in budget- we are over the moon with the finished bathroom and looks lovely, workers – Steve and Chris was so polite and tidy and explained every stage to us.Showroom well worth a visit if you looking for a nice bathroom, and all there guys work for them direct. thank you – WILL BE BACK FOR MY ENSUITE</p>
+							<p class="person"><strong>Kate Beale</strong>Hornchurch</p>
 						</div>
 					</div>
-				<span class="close-quote"></span>
+					<span class="close-quote"></span>
 				</div>
 			</div>
-			<div class="testimonial">
-				<span class="open-quote"></span>
-				@include('partials.5-stars')
-				<div class="testimonial-content">
+			<div class="col-2">
+				<div class="testimonial">
+					<span class="open-quote"></span>
+					@include('partials.5-stars')
 					<div class="testimonial-content">
-						<div class="title">We can’t thank him or you enough!</div>
-						<div class="body">
-							<p>Thank you for the fast and professional service yesterday. This is our second appointment with your company and both have been positive.</p>
-							<p class="person"><strong>Mrs Belkin</strong>Wembley</p>
+						<div class="testimonial-content">
+							<div class="title">These guys are very professional</div>
+							<div class="body">
+								<p>I want to express my gratitude towards the service of RSF Group, These guys are very professional and take pride on the work that they do. I had Danny install a Vaillent boiler for my home and was very pleased on the workmanship of the installation. He was very thorough and Danny main concern was to make sure the job was done right.finished clean and tidy and on time</p>
+								<p>Since then I had a brand new sump pump installed and a few minor issues taken care of. They are a very courteous group of employees and I definitely made the right decision contacting them to do the work in my home.</p>
+								<p class="person"><strong>Jean Potter</strong>Romford</p>
+							</div>
 						</div>
+						<span class="close-quote"></span>
 					</div>
 				</div>
-				<span class="close-quote"></span>
+				<div class="testimonial">
+					<span class="open-quote"></span>
+					@include('partials.5-stars')
+					<div class="testimonial-content">
+						<div class="testimonial-content">
+							<div class="title">Quick to respond to my emergency</div>
+							<div class="body">
+								<p>Thank you RSF Group for turning up quickly and stopping which could have been a major flood - called you at 1.45pm and plumber turned up at 3.15pm – water coming through light fitting – carried out work and repaired the damaged pipe and replaced carpets</p>
+								<p>Total cost £125.00 – very happy</p>
+								<p class="person"><strong>Julie</strong>Chelmsford</p>
+							</div>
+						</div>
+						<span class="close-quote"></span>
+					</div>
+				</div>
+				<div class="testimonial">
+					<span class="open-quote"></span>
+					@include('partials.5-stars')
+					<div class="testimonial-content">
+						<div class="title">RSF thanks for a great job</div>
+						<div class="body">
+							<p>Called out RSF Group for noisy boiler, they power flushed my heating system and installed water treatment and magna clean to my pipework and everything now working fine,British Gas quoted me £590 more than RSF THANKS FOR A GREAT JOB.</p>
+							<p class="person"><strong>Mrs Long</strong>Hutton</p>
+						</div>
+					</div>
+					<span class="close-quote"></span>
+				</div>
+				<div class="testimonial">
+					<span class="open-quote"></span>
+					@include('partials.5-stars')
+					<div class="testimonial-content">
+						<div class="testimonial-content">
+							<div class="title">At last a decent Gas Company</div>
+							<div class="body">
+								<p>tried 3 Companies who wanted silly money for a small gas run. Done with 3 hours and a reasonable charge</p>
+								<p class="person"><strong>Mr Swallow</strong>Billericay</p>
+							</div>
+						</div>
+						<span class="close-quote"></span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
