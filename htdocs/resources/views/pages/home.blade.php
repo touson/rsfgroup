@@ -41,18 +41,15 @@
 		<div class="col-set hp-panels">
 			<div class="col-3">
 				<h2>Fully Certified Engineers</h2>
-				<img src="images/general/hp-engineer.jpg" alt="">
-				<p>Nam sapien risus, convallis in mi at, pretium condimentum ipsum. Donec ut erat a lectus semper convallis. Integer non varius urna, ut rhoncus ligula. Maecenas ac lectus sit amet turpis convallis vestibulum. </p>
+				<img src="images/general/hp-gas-ring.jpg" alt="">
 			</div>
 			<div class="col-3">
 				<h2>Emergency Response Service</h2>
-				<img src="images/general/hp-man-and-woman.jpg" alt="">
-				<p>Donec auctor quam ut neque luctus, et mollis massa cursus. Donec nisi ligula, molestie eu elementum sed, ultricies sit amet dolor. Quisque lobortis magna mauris, id imperdiet nunc ornare sed. </p>
+				<img src="images/general/hp-house-flood.jpg" alt="">
 			</div>
 			<div class="col-3">
 				<h2>Boiler Servicing</h2>
-				<img src="images/general/hp-boiler-man.jpg" alt="">
-				<p>Pellentesque dictum odio at urna tincidunt pulvinar. In dictum, enim id ullamcorper rhoncus, ex massa viverra tellus, vitae ultrices enim dui eu lacus. Cras congue ex ante, et fringilla tellus interdum vel. </p>
+				<img src="images/general/hp-man-boiler.jpg" alt="">
 			</div>
 		</div>
 	</div>
