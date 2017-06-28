@@ -87,7 +87,7 @@ $(document).ready(function(){
 	});
 
 	// Trigger the layout functions
-	repositionTestimonials();
+	// repositionTestimonials();
 	pageHeaderPadding();
 
 	$('#prices h3').click(function(){
@@ -103,6 +103,8 @@ $(document).ready(function(){
 // We set them here so they only get set once on page load.
 var $es = $('#es-water-approved-block');
 var $headerTitle = $('.page-header h1');
+var $primary = $('.primary');
+var $secondary = $('.secondary');
 
 /**
  * Page Header Padding
@@ -115,52 +117,17 @@ var pageHeaderPadding = function(){
 	if(viewPortWidth > 1200) {
 		var pos = (viewPortWidth - 1200) / 2 + 20;
 		$es.css('left', pos);
-		$headerTitle.css('padding-left', pos);
-	} else if(viewPortWidth < 768) {
-		$headerTitle.css('padding-left', 0);
-	} else {
+		$headerTitle.css('left', pos);
+		$primary.css('padding-left', pos);
+		$secondary.css('padding-left', pos);
+	} else if(viewPortWidth > 768) {
+		$headerTitle.css('left', 130);
 		$es.css('left', 30);
-		$headerTitle.css('padding-left', 130);
-	}
-}
-
-/**
- * Reposition Testimonials
- * -----------------------
- * Sets the css value for each testimonial block by checking the top and height
- * of the one directly above it.  This function also calculates the total height
- * of the columns and sets the height value of the container as all the children
- * are absolutely positioned.
- */
- function repositionTestimonials() {
- 	var $testimonials = $('.testimonial');
- 	if($(window).width() > 600) {
-		// Keep track of both column heights to determine the container size
-		var heights = [0,0];
-		$testimonials.each(function(i, testimonial){
-			if(i > 1) {
-				// Get the height and top position of the testimonial
-				// block above the current one
-				var $oneAbove = $($testimonials[i - 2]);
-				var height = $oneAbove.outerHeight();
-				var topAbove = parseInt($oneAbove.css('top'));
-				var top = topAbove + height + 20;
-				// Set the top value for the current testimonial based on
-				// the position and size of the one above
-				$(testimonial).css('top', top + 'px');
-			} else {
-				var height = $(testimonial).outerHeight();
-			}
-			// Calculate the height of each column
-			heights[i % 2] += height + 20;
-		});
-		// Set the testimonials container height based
-		// on the highest of the 2 columns
-		var highest = Math.max.apply(Math, heights);
-		highest += 20;
-		$('.testimonials').css('height', highest + 'px');
+		$primary.css('padding-left', 50);
+		$secondary.css('padding-left', 50);
 	} else {
-		$testimonials.css('top', 'initial');
-		$('.testimonials').css('height', 'auto');
+		$headerTitle.css('left', 0);
+		$primary.css('padding-left', 20);
+		$secondary.css('padding-left', 20);
 	}
 }

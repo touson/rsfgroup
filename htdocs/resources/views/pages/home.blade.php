@@ -1,10 +1,8 @@
 @extends('master')
 
 @section('content')
-<div class="container full">
 	<div id="hp-slider">
-		<div class="slide">
-			<img src="images/slideshow/smiling-plumber.jpg" alt="Certified Plumbers">
+		<div class="slide plumbing">
 			<div class="title">
 				<div class="primary">Certified Plumbers</div>
 				<div class="secondary">
@@ -12,8 +10,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="slide">
-			<img src="images/slideshow/customer-signing.jpg" alt="Boiler Servicing">
+		<div class="slide boiler-servicing">
 			<div class="title">
 				<div class="primary">Boiler Servicing</div>
 				<div class="secondary">
@@ -21,8 +18,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="slide">
-			<img src="images/slideshow/girl-and-dog.jpg" alt="Emergency response 24/7">
+		<div class="slide emergency">
 			<div class="title">
 				<div class="primary">Emergency response 24/7</div>
 				<div class="secondary">
@@ -30,8 +26,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="slide">
-			<img src="images/slideshow/vans.jpg" alt="Landlord Services">
+		<div class="slide landlord-services">
 			<div class="title">
 				<div class="primary">Landlord Services</div>
 				<div class="secondary">
@@ -40,13 +35,6 @@
 			</div>
 		</div>
 	</div>
-	<div id="slide-selector">
-		<a data-slide-index="0">Certified Plumbers<span></span></a>
-		<a data-slide-index="1">Boiler Servicing<span></span></a>
-		<a data-slide-index="2">Emergency boiler repairs<span></span></a>
-		<a data-slide-index="3">Landlord Services<span></span></a>
-	</div>
-</div>
 
 <section>
 	<div class="container">

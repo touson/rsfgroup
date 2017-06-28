@@ -1,9 +1,17 @@
 #hp-slider {
+	width: 100%;
 	.slide {
 		position: relative;
+		height: 300px;
+		background-size: cover;
+		background-position: center center;
 		& > img {
 		}
 		.title {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
 		}
 		.primary {
 			background: $c-blue;
@@ -27,7 +35,23 @@
 				}
 			}
 		}
+		&.plumbing {
+			background-image: url(/images/banners/plumbing-picture.jpg);
+		}
+		&.boiler-servicing {
+			background-image: url(/images/banners/boiler-picture.jpg);
+		}
+		&.emergency {
+			background-image: url(/images/banners/Vans1.jpg);
+		}
+		&.landlord-services {
+			background-image: url(/images/banners/electrical-pictures.jpg);
+		}
 	}
+}
+
+.bx-wrapper {
+	margin-bottom: 30px;
 }
 
 #slide-selector {
@@ -167,12 +191,6 @@
 @include bp(min-width, $bp-small + 1) {
 	#hp-slider {
 		.slide {
-			.title {
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				right: 0;
-			}
 			.primary {
 				font-size: 27px;
 				font-weight: 400;
