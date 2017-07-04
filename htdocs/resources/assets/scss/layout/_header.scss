@@ -28,6 +28,20 @@ header {
 			}
 		}
 	}
+	.email {
+		margin-bottom: 10px;
+	}
+	.tel {
+		font-size: 27px;
+		margin-bottom: 10px;
+		span {
+			display: block;
+			&.message {
+				font-size: 60%;
+				font-weight: 400;
+			}
+		}
+	}
 	.quote-button {
 		display: none;
 	}
@@ -42,7 +56,10 @@ header {
 	font-weight: 100;
 	margin: 20px 0 0 0;
 	font-size: 14px;
+	line-height:22px;
 	text-align: center;
+	padding: 10px 20px;
+	background: rgba(0,0,0,0.3);
 }
 
 nav {
@@ -115,24 +132,6 @@ nav {
 }
 
 @include bp(min-width, $bp-xsmall + 1) {
-	header {
-		.contact-info {
-			width: 48%;
-			margin-right: 2%;
-		}
-		.quote-button {
-			width: 48%;
-		}
-		.quote-button,
-		.contact-info {
-			display: inline-block;
-			vertical-align: middle;
-		}
-		.tel,
-		.email {
-			text-align: right;
-		}
-	}
 }
 
 @include bp(min-width, $bp-small + 1) {
@@ -143,22 +142,45 @@ nav {
 
 @include bp(min-width, $bp-medium + 1) {
 	header {
-		padding: 30px;
+		padding: 30px 0 0 0;
 		.logo {
 			display: inline-block;
 			vertical-align: middle;
 		}
 		.contact-info {
-			width: calc(100% - 460px);
-			margin-right: 20px;
-		}
-		.quote-button {
-			width: 210px;
+			display: inline-block;
+			vertical-align: middle;
+			width: calc(100% - 230px);
+			text-align: right;
 		}
 		.tel,
 		.email {
 			font-size: 20px;
-			display: block;
+			display: inline-block;
+			text-align: right;
+			margin-bottom: 0;
+		}
+		.tel {
+			width: 250px;
+			margin-left: 20px;
+			position: relative;
+			font-size: 27px;
+			span {
+				display: block;
+				padding-right: 70px;
+				&.message {
+					font-size: 60%;
+					font-weight: 400;
+				}
+			}
+			&:after {
+				@include icon('f');
+				font-size: 60px;
+				line-height: 60px;
+				top: 0;
+				position: absolute;
+				right: 0;
+			}
 		}
 	}
 	nav {
@@ -203,20 +225,24 @@ nav {
 	#ellipse {
 		display: none;
 	}
+	#strapline {
+		font-size: 16px;
+		letter-spacing: 2px;
+		padding: 16px 0;
+	}
 }
 
 @include bp(min-width, $bp-large + 1) {
 	header {
-		.contact-info {
-			width: calc(100% - 440px);
-			margin-right: 0;
-			text-align: right;
-		}
-		.tel,
-		.email {
-			font-size: 24px;
+		.quote-button {
 			display: inline-block;
-			margin-right: 30px;
+			vertical-align: middle;
+			width: 210px;
+		}
+		.contact-info {
+			width: calc(100% - 460px);
+			margin-right: 20px;
+			text-align: right;
 		}
 	}
 	nav {
@@ -229,8 +255,8 @@ nav {
 		}
 	}
 	#strapline {
-		font-size: 22px;
-		margin-top: 10px;
+		font-size: 18px;
+		letter-spacing: 4px;
 	}
 }
 
@@ -241,8 +267,6 @@ nav {
 		}
 	}
 	#strapline {
-		font-size: 17px;
-		float: right;
-		letter-spacing: 2px;
+		letter-spacing: 8px;
 	}
 }
