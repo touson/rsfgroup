@@ -63,6 +63,8 @@
 				<li><a href="/contact-us">Contact Us</a></li>
 				<li><a href="/guarantees">Guarantees</a></li>
 				<li><a href="/areas-covered">Areas Covered</a></li>
+				<li><a href="http://www.rsfbathrooms.co.uk/" target="_blank">Shop Online</a></li>
+				<li><a href="http://www.rsfbathroomdesigns.co.uk/" target="_blank">Visit Our Showroom</a></li>
 			</ul>
 		</div>
 		<div class="contact-block">
