@@ -12,6 +12,7 @@
 		}
 	}
 	h3 {
+		display: block;
 		&:before {
 			@include triangle('down', 14px, lighten($c-blue, 30%));
 			right: 0;
@@ -21,9 +22,20 @@
 			&:before {
 				@include triangle('left', 14px, $c-blue);
 			}
+			&:hover {
+				&:before {
+					border-top-color: transparent;
+				}
+			}
 			& + .leaf {
 				max-height: 500px;
 				padding-bottom: 20px;
+			}
+		}
+		&:hover {
+			border-bottom-color: darken($c-lgrey, 10%);
+			&:before {
+				border-top-color: $c-blue;
 			}
 		}
 	}
