@@ -244,6 +244,14 @@ nav {
 			margin-right: 20px;
 			text-align: right;
 		}
+		.tel {
+			width: 290px;
+			font-size: 32px;
+			&:after {
+				font-size: 70px;
+				line-height: 77px;
+			}
+		}
 	}
 	nav {
 		.main-nav {
