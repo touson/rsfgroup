@@ -3,6 +3,7 @@
 @section('content')
 	<div id="hp-slider">
 		<div class="slide plumbing">
+			@include('include.es-water-approved', ['id'=>'hp-es-water'])
 			<div class="title">
 				<div class="primary">Certified Plumbers</div>
 				<div class="secondary">
@@ -11,6 +12,7 @@
 			</div>
 		</div>
 		<div class="slide boiler-servicing">
+			@include('include.es-water-approved', ['id'=>'hp-es-water'])
 			<div class="title">
 				<div class="primary">Boiler Servicing</div>
 				<div class="secondary">
@@ -19,6 +21,7 @@
 			</div>
 		</div>
 		<div class="slide emergency">
+			@include('include.es-water-approved', ['id'=>'hp-es-water'])
 			<div class="title">
 				<div class="primary">Emergency response 24/7</div>
 				<div class="secondary">
@@ -27,6 +30,7 @@
 			</div>
 		</div>
 		<div class="slide landlord-services">
+			@include('include.es-water-approved', ['id'=>'hp-es-water'])
 			<div class="title">
 				<div class="primary">Landlord Services</div>
 				<div class="secondary">
@@ -41,7 +45,7 @@
 		<div class="col-set hp-panels">
 			<div class="col-3">
 				<h2>Fully Certified Engineers</h2>
-				<img src="images/general/hp-gas-ring.jpg" alt="">
+				<img src="images/general/side-of-van.jpg" alt="">
 			</div>
 			<div class="col-3">
 				<h2>Emergency Response Service</h2>

@@ -49,6 +49,7 @@
 }
 
 #es-water-approved-block {
+	display: none;
 	position: absolute;
 	top: 15px;
 	left: 20px;
@@ -69,6 +70,14 @@
 	}
 }
 
+
+.hp-es-water {
+	@extend #es-water-approved-block;
+	left: auto;
+	right: 30px;
+}
+
+
 // =========================
 //  Extra Small Breakpoint
 // =========================
@@ -79,13 +88,18 @@
 			font-size: 20px;
 		}
 	}
+	.hp-es-water {
+		left: auto;
+	}
 }
 
 // =========================
 //  Small Breakpoint
 // =========================
 @include bp(min-width, $bp-small + 1) {
-
+	#es-water-approved-block {
+		display: block;
+	}
 }
 
 // =========================
@@ -101,7 +115,8 @@
 			font-size: 40px;
 			top: 60%;
 			bottom: auto;
-			width: auto;
+			width: 341px;
+			text-align: center;
 		}
 	}
 	#es-water-approved-block {
