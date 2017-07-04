@@ -16,12 +16,12 @@
 				<p>From the moment you call our Office Call Centre we will do our best to ensure that the experience you have will be one which builds confidence in us.</p>
 				<p>Larger works will be supervised by one of our highly knowledgeable and experienced managers who will regularly update you and answer any of your queries.</p>
 				<p>Still a family run business we pride ourselves on that personal service which we believe is paramount to our success </p>
-				<img src="/images/general/registered-andy.jpg" alt="">
+				<img src="/images/general/house-scarf.jpg" alt="">
 			</div>
 			<div class="col-2">
 				<div id="prices">
 					<div class="header">
-						<h1>2016 Prices</h1>
+						<h1>2017 Prices</h1>
 						<h2>Effective from 9th September 2016.</h2>
 					</div>
 					<h3>Gas Engineer / Plumber</h3>
