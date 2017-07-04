@@ -121,7 +121,7 @@ var pageHeaderPadding = function(){
 		$primary.css('padding-left', pos);
 		$secondary.css('padding-left', pos);
 	} else if(viewPortWidth > 768) {
-		$headerTitle.css('left', 130);
+		$headerTitle.css('left', 30);
 		$es.css('left', 30);
 		$primary.css('padding-left', 50);
 		$secondary.css('padding-left', 50);
