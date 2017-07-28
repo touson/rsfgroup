@@ -23,7 +23,7 @@ class MainController extends Controller
             'email' => 'required|email'
         ]);
 
-		Mail::to('chris@touson.co.uk')
+		Mail::to('rick@rsfgroup.co.uk')
 			->send(new ContactEnquiry($request));
 
         return redirect('thank-you');
