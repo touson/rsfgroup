@@ -11,26 +11,8 @@
 	<div class="container">
 		<div class="col-set">
 			<div class="col-2">
-				<p>If your looking for a quote, need emergency assistance or would simply like to ask a question, we are always happy to help.</p>
-				<p>Simply enter your enquiry details below and one of our highly experienced team will contact you as soon as possible with a response.</p>
-				<form action="/contact-us" method="post" id="contact-form">
-					{{ csrf_field() }}
-					<div class="form-group">
-						<input type="text" name="name" placeholder="Name" class="<?php echo $errors->has('name') ? 'error' : '' ;?>">
-					</div>
-					<div class="form-group">
-						<input type="text" name="email" placeholder="Email address" class="<?php echo $errors->has('email') ? 'error' : '' ;?>">
-					</div>
-					<div class="form-group">
-						<input type="text" name="telephone" placeholder="Contact number">
-					</div>
-					<div class="form-group">
-						<textarea name="enquiry" placeholder="How can we help....?"></textarea>
-					</div>
-					<div class="form-group">
-						<button>Submit enquiry</button>
-					</div>
-				</form>
+				<h2>Thank you</h2>
+				<p>Your enquiry has been sent to our highly qualified team, one of whom will contact you shortly to discuss your requirements further</p>
 			</div>
 			<div class="col-2 map-container">
 				<p class="call-us-on">Call us today on <strong>01708 444 355</strong></p>

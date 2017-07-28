@@ -32,6 +32,9 @@ input[type=text] {
     font-size: 14px;
     border: 1px solid darken($c-lgrey, 10%);
     @include border-radius(3px);
+    &.error {
+    	border-color: $c-red;
+    }
 }
 
 @include bp(min-width, $bp-xsmall + 1) {

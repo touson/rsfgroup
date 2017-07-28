@@ -32,6 +32,7 @@ Route::get('areas-covered', function () {
 Route::get('contact-us', function () {
     return view('pages.contact', ['page' => 'contact-us']);
 });
+Route::post('contact-us', 'MainController@contact');
 Route::get('commercial', function () {
     return view('pages.commercial', ['page' => 'commercial']);
 });
@@ -43,4 +44,7 @@ Route::get('prices', function () {
 });
 Route::get('/', function () {
     return view('pages.home', ['page' => 'home']);
+});
+Route::get('thank-you', function(){
+	return view('pages.contact-success', ['page' => 'contact-us']);
 });

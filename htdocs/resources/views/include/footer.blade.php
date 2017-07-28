@@ -164,13 +164,13 @@
 			</ul>
 		</div>
 		<div class="footer-bottom">
-			<div class="sign-up">
+			{{-- <div class="sign-up">
 				<p>Sign up for our newsletter</p>
 				<form action="" method="post">
 					<input type="text">
 					<button>Submit</button>
 				</form>
-			</div>
+			</div> --}}
 			<div class="copyright">
 				<p>&copy; Copyright RSF Maintenance Ltd 2016. RSF Maintenance Ltd registered office Shadwell House, 65 Lower Green Road, Rusthall, Tunbridge Wells, Kent, United Kingdom, TN4 8TW .</p>
 				<p>Company registration number 09448833</p>
